@@ -55,8 +55,10 @@ body {
   /* position: relative; */
   /* background: radial-gradient(ellipse at bottom, #d6edb7 0%, #09ba44 100%); */
   background-image: url("../img/background.jpg");
+  /* background-image: linear-gradient(to right bottom, rgba(185, 162, 162, 0.8), #812424),url(../img/background.jpg);
+  overflow: hidden; */
   background-size: cover;
-  overflow: hidden;
+  /* opacity: 0.9; */
   z-index: 100;
 
   /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
@@ -94,7 +96,7 @@ body {
 }
 
 /* BUTTON CLICK ME */
-.btn-link {
+.btn-click {
   text-decoration: none;
   font-size: 2rem;
   /* text-align: center; */
@@ -365,12 +367,12 @@ body {
 }
 
 .about-desc { /* sẽ làm animation xoay */
-    width: calc(100% - 14rem);
+    width: calc(100% - 24rem);
     height: 50rem;
-    margin-left: 7rem;
+    margin-left: 12rem;
     border-radius: 20rem 20rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-image: linear-gradient(to left, #7ac2d8, #367e88);
     transform: skewY(-5deg); 
@@ -388,6 +390,7 @@ body {
     background-position: center;
     transform: skewY(5deg);
     margin-top: -2rem;
+    margin-right: 5rem;
 }
 
 .about-text {
@@ -397,7 +400,8 @@ body {
     line-height: 6rem;
     color: #27302f;
     transform: skewY(5deg);
-    margin-bottom: -4rem;
+    margin-bottom: -2rem;
+    margin-left: 5rem;
 }
 
 /* SKILLS */
@@ -423,7 +427,7 @@ body {
 }
 
 .container {
-  width: 70%;
+  width: 50%;
   height: 50rem;
   margin-top: 8rem;
 }
@@ -531,30 +535,105 @@ body {
 }
 
 .card-container {
-    width: calc(100% - 30rem);
+    width: 100%;
     height: 80rem;
-    margin-left: 15rem;
     background-color: grey;
 
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .card {
+    width: calc(100% - 30rem);
+    height: 40rem;
+    margin-left: 15rem;
+    margin-bottom: 2rem;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-view {
+    width: 100%;
+    height: 35rem;
+    background-color: blue;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-img {
+    width: 80rem;
+    height: 100%;
+    position: relative;
+    background-color: rosybrown;
+}
+
+.natours-1 {
     width: 30rem;
-    height: 30rem;
-    margin: 3rem;
-}
-
-.img {
-    background-position: center;
-    background-size: cover;
-}
-
-.img-natours {
+    height: 20rem;
     background-image: url("../img/natours.PNG");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 50;
+
+    border: 1rem solid rgb(49, 45, 45);
+}
+
+.natours-2 {
+    width: 30rem;
+    height: 20rem;
+    background-image: url("../img/natours-2.PNG");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    z-index: 30;
+    border: 1rem solid rgb(49, 45, 45);
+}
+
+.natours-3 {
+    width: 30rem;
+    height: 20rem;
+    background-image: url("../img/natours-3.PNG");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    border: 1rem solid rgb(49, 45, 45);
+}
+
+.btn {
+   width: 10rem;
+   height: 10rem;
+   background-color: palevioletred;
+}
+
+.btn-view {
+
+}
+
+.btn.link {
+
+}
+
+.card-desc {
+    font-size: 2rem;
+    color: black;
 }
 
 .img-trillo {
@@ -567,4 +646,12 @@ body {
 
 .img-todo-list {
     background-image: url("../img/todo-list.PNG");
+}
+
+.card-desc {
+
+}
+
+.btn-card {
+
 }
