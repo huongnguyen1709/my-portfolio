@@ -8,16 +8,17 @@
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
+
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
         <title>Huong Nguyen | Welcome to my World</title>
     </head>
     <body>
-        <header class="header">
+        <header class="header" id="header">
             
             <nav class="navigation">
                 <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="#header" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#project" class="nav-link">Project</a></li>
                     <li><a href="#experience" class="nav-link">Experience</a></li>
@@ -71,68 +72,58 @@
                 <div class="skills">
 
                     <h2 class="skills-heading">
-                        My Language
+                        My Skills
                     </h2>
                     
                     <div class="container">
                         <div class="skills-bar">
                             <div class="bar-name">HTML</div>
                             <div class="bar-fill" style="width: calc(90% - 10rem);"></div>
-                            <span class="bar-figures">90%</span>
                         </div>
 
                         <div class="skills-bar">
                             <div class="bar-name">CSS</div>
                             <div class="bar-fill" style="width: calc(80% - 10rem);"></div>
-                            <span class="bar-figures">80%</span>
                         </div>
 
                         <div class="skills-bar">
                             <div class="bar-name">JavaScript</div>
                             <div class="bar-fill" style="width: calc(65% - 10rem);"></div>
-                            <span class="bar-figures">65%</span>
                         </div>
 
                         <div class="skills-bar">
                             <div class="bar-name">SASS</div>
                             <div class="bar-fill" style=" width: calc(70% - 10rem);"></div>
-                            <span class="bar-figures">70%</span>
                         </div>
 
                         <div class="skills-bar">
                             <div class="bar-name">React</div>
                             <div class="bar-fill" style="width: calc(75% - 10rem);"></div>
-                            <span class="bar-figures">75%</span>
                         </div>
 
                         <div class="skills-bar">
                             <div class="bar-name">Wordpress</div>
                             <div class="bar-fill" style="width: calc(75% - 10rem);"></div>
-                            <span class="bar-figures">75%</span>
                         </div>
 
                         <div class="skills-bar">
                             <div class="bar-name">Photoshop</div>
                             <div class="bar-fill" style="width: calc(55% - 10rem);"></div>
-                            <span class="bar-figures">55%</span>
                         </div>
 
                         <div class="skills-bar">
                             <div class="bar-name">Illustrator</div>
                             <div class="bar-fill" style="width: calc(45% - 10rem);"></div>
-                            <span class="bar-figures">45%</span>
                         </div>
 
                         <div class="skills-bar">
                             <div class="bar-name">NodeJS</div>
                             <div class="bar-fill" style="width: calc(35% - 10rem);"></div>
-                            <span class="bar-figures">35%</span>
                         </div>
 
                         <div class="skills-bar">
                             <div class="bar-name">C/C#</div>
                             <div class="bar-fill" style="width: calc(30% - 10rem);"></div>
-                            <span class="bar-figures">30%</span>
                         </div>
                     </div>
 
@@ -153,15 +144,16 @@
                                 <div class="img-3" style="background-image: url(img/natours-2.PNG);"></div>
                             </div>
                             <div class="btn">
-                                <button class="btn-view red"><a href="" class="btn-txt">View</a></button>
-                                <button class="btn-link">
-                                    <a href="" class="btn-git">GitHub
-                                        <!-- <i class="fa fa-chevron-right"></i> -->
-                                    </a>
-                                </button>
+                                <a href="https://huongnguyen1709.github.io/natours-sass-advance-css/" target="_blank" class="btn-view red">View</a>
+                                <a href="https://github.com/huongnguyen1709/natours-sass-advance-css" target="_blank" class="btn-link">GitHub</a>
                             </div>
                         </div>
-                        <p class="card-desc">Natours project self-learning from the online course with HTML, advance CSS, SASS</p>
+
+                        <div class="card-desc">
+                            <h2 class="card-title">Natours</h2>
+                            <p>Natours project self-learning from the online course with HTML, advance CSS, SASS</p>
+                        </div>
+                        
                     </div>
                     
                     <div class="card">
@@ -172,11 +164,16 @@
                                 <div class="img-3" style="background-image: url(img/trillo-2.PNG);"></div>
                             </div>
                             <div class="btn">
-                                <button class="btn-view red"><a href="" class="btn-txt">View</a></button>
-                                <button class="btn-link"><a href="" class="btn-git">GitHub</a></button>
+                                <a href="https://huongnguyen1709.github.io/trillo-flexbox/" target="_blank" class="btn-view red">View</a>
+                                <a href="https://github.com/huongnguyen1709/trillo-flexbox" target="_blank" class="btn-link">GitHub</a>
                             </div>
                         </div>
-                        <p class="card-desc">Trillo project self-learning from the online course with HTML, advance CSS, SASS</p>
+
+                        <div class="card-desc">
+                                <h2 class="card-title">Trillo</h2>
+                            <p>Trillo project self-learning from the online course with HTML, advance CSS, SASS</p>
+                        </div>
+                        
                     </div>
 
                     <div class="card">
@@ -187,11 +184,16 @@
                                 <div class="img-3" style="background-image: url(img/setting-2.PNG);"></div>
                             </div>
                             <div class="btn">
-                                <button class="btn-view red"><a href="" class="btn-txt">View</a></button>
-                                <button class="btn-link"><a href="" class="btn-git">GitHub</a></button>
+                                <a href="https://setting-text-color.herokuapp.com/" target="_blank" class="btn-view red">View</a>
+                                <a href="https://github.com/huongnguyen1709/setting-text-color-by-react" target="_blank" class="btn-link">GitHub</a>
                             </div>
                         </div>
-                        <p class="card-desc">Setting Text Color doing by React, the very first learning React.</p>
+
+                        <div class="card-desc">
+                            <h2 class="card-title">Setting Text Color</h2>
+                            <p>Setting Text Color doing by React, the very first learning React.</p>
+                        </div>
+                        
                     </div>
 
                     <div class="card">
@@ -202,11 +204,16 @@
                                 <div class="img-3" style="background-image: url(img/Capture-4.PNG);"></div>
                             </div>
                             <div class="btn">
-                                <button class="btn-view red"><a href="" class="btn-txt">View</a></button>
-                                <button class="btn-link"><a href="" class="btn-git">GitHub</a></button>
+                                <a href="https://create-to-do-list-daily.herokuapp.com/" target="_blank" class="btn-view red">View</a>
+                                <a href="https://github.com/huongnguyen1709/to-do-list" target="_blank" class="btn-link">GitHub</a>
                             </div>
                         </div>
-                        <p class="card-desc">Todo List doing by Reactuhsukcghjsgcahsgfucgsxckjghduifjksdhfkjdufjkfjkhdfjk.</p>
+
+                        <div class="card-desc">
+                            <h2 class="card-title">Todo List</h2>
+                            <p>Todo List doing by Reactuhsukcghjsgcahsgfu xckjghduifjksdhfkjdufjkfjkhdfjk.</p>
+                        </div>
+                       
                     </div>
                 </div>
             </section>
@@ -214,7 +221,7 @@
                 My experience
             </section> -->
             <section class="section-contact" id="contact">
-                <div class="position">
+                <div class="position-contact">
                         <div class="contact-header">
                                 <h1 class="contact-title title">Contact</h1>
                                 <div class="section-bar contact-bar"></div>
@@ -239,6 +246,7 @@
         </main>
 
         <footer class="footer">
+            <div class="up-arrow"><i class="fas fa-angle-double-up arrow-icon"></i></div>
             <ul class="socialmedia">
                 <li><a href="https://www.facebook.com/nguyenthuhuong.1709"><i class="fab fa-facebook-square icon"></i></a></li>
                 <li><a href="https://github.com/huongnguyen1709"><i class="fab fa-github-square github icon"></i></a></li>
@@ -246,5 +254,9 @@
             </ul>
             <h5 class="copyright"><span>@2019</span> Huong Nguyen</h5>
         </footer>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
