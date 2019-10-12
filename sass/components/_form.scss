@@ -1,0 +1,23 @@
+.form {
+    width: calc(100% - 100rem);
+    height: 45rem;
+    margin-left: 50rem;
+}
+
+.label-form {
+    font-size: 2rem;
+    color: white; 
+}
+
+.form-input {
+    color: #222932;
+    width: 100%;
+    padding: .5rem 1rem;
+    margin: .5rem 0;
+    font-size: 1.5rem;
+    border: 0;
+    border-radius: 1rem;
+    border-bottom: 5px solid transparent;
+    transition: all .2s;
+    outline: 0;
+}

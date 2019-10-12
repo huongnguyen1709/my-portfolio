@@ -1,0 +1,38 @@
+/* SKILLS BAR CONTAINER */ 
+
+.container {
+    width: 50%;
+    height: 50rem;
+    margin-top: 7rem;
+}
+  
+
+/* EVERY SKILL BAR */
+
+  .skills-bar {
+    width: 100%;
+    height: 4rem;
+    position: relative;
+    /* background-color: #d4f0f5; */
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    display: flex;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  .bar-name {
+      width: 10rem;
+      /* background-color: #49a5bf; */
+      background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+      /* background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%); */
+      text-align: center;
+      font-size: 1.5rem;
+      padding-top: 0.8rem;
+      letter-spacing: 0.1rem;
+      z-index: 10;
+  }
+  
+  .bar-fill {
+    background-image: linear-gradient(to top, #a18cd1 0%, #8ed8f5 100%);
+      z-index: 9;
+  }

@@ -1,0 +1,90 @@
+ /* HEADER */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    /* position: relative; */
+    /* background: radial-gradient(ellipse at bottom, #c1dde6 0%, #1abbe8 100%); */
+    /* background-image: url("../img/background.jpg"); */
+    /* background-repeat: repeat;  */
+    /* background-image: url("../img/background-2.jpg"); */
+    /* background-image: linear-gradient(to right bottom, rgba(185, 162, 162, 0.8), #812424),url(../img/background.jpg);
+    overflow: hidden; */
+    /* background-size: cover; */
+    /* opacity: 0.9; */
+    /* background-color: rgb(99, 119, 126); */
+    /* background: radial-gradient(ellipse at bottom, #4c719c 0%, #090a0f 100%); */
+    z-index: 100;
+  
+    background-image: url("../img/background-3.jpg");
+  
+    /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); */
+}
+
+
+  /* SECTION ABOUT */
+
+.section-about {
+    width: 100%;
+    height: 160rem;
+    position: relative;
+    
+    /* background-image: linear-gradient(to right, #ee9ca7, #ffdde1); */
+    /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    
+    /* background-color: #615151; */
+    /* background-image: url("../img/background-2.jpg"); */
+}
+
+
+/* SECTION PROJECT */
+.section-project{
+    width: 100%;
+    height: 208rem;
+    position: relative;
+    /* background: radial-gradient(ellipse at bottom, #96deda  0%, #50c9c3 100%); */
+    /* background-image: linear-gradient(to right, #ffc3a0, #ffafbd); */
+    /* background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%); */
+    /* background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%); */
+
+    background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
+
+    /* background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%); */
+    /* background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%); */
+    /* background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); */
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+    z-index: 10;
+}
+
+
+/* SECTION CONTACT */
+.section-contact {
+    width: 100%;
+    height: 85rem;
+    margin-top: -19rem;
+    /* background-color: rgb(99, 119, 126); */
+    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+   position: relative;
+   z-index: 2;
+}
+
+.position-contact {
+    width: 100%;
+    height: 70rem;
+    position: absolute;
+    top: 11rem;
+    left: 0;
+}
+
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(55, 59, 77);
+    position: relative;
+}

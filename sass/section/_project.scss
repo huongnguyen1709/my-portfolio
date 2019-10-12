@@ -1,0 +1,36 @@
+.project-header {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.project-title {
+    /* background: -webkit-linear-gradient(rgb(204, 92, 72), #615151);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  */
+    color: #FFF;
+    text-shadow: 1px 1px #FF8040, 2px 2px #FF8040, 3px 3px #FF8040;
+    font: Bold 5rem;
+    /* -webkit-transition: all 0.12s ease-out;chrome & safari */
+    font-size: 4rem;
+}
+
+/* .header-text {
+    background: -webkit-linear-gradient(rgb(182, 127, 127), #090a0f); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.project-bar {
+    width: 12rem;
+    height: 4px;
+    position: absolute;
+    top: 70%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    /* background-image: linear-gradient(to right, #7ac2d8, #367e88); */
+    background-image: linear-gradient(to right, white, #FF8040);
+}

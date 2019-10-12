@@ -1,0 +1,47 @@
+/* ANIMATION FOR GLOBE */
+  
+@-webkit-keyframes rotate {
+    0% {
+      -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+              transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    100% {
+      -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+              transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+  
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+              transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    100% {
+      -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+              transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+/* ANIMATION FOR UP ARROW BUTTON */
+
+@keyframes shadow-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0 rgba(170, 40, 148, 0.99);
+     }
+
+     70% {
+        box-shadow: 0 0 0 2rem rgba(253,87,191,0);
+     }
+
+     100% {
+          box-shadow: 0 0 0 3rem rgba(146, 55, 123, 0);
+     }
+}
+
+@keyframes bounceAlpha {
+    0% {opacity: 1; transform: translateY(0px) scale(1);}
+    25%{opacity: 0; transform:translateY(-10px) scale(0.9);}
+    26%{opacity: 0; transform:translateY(10px) scale(0.9);}
+    55% {opacity: 1; transform: translateY(0px) scale(1);}
+}

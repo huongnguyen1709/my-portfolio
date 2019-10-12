@@ -1,0 +1,30 @@
+.contact-header {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.contact-title {
+  font-size: 4rem;
+  color: #a3c2c2;
+  text-shadow: 1.5px 1.5px #141f1f, 2.5px 2.5px #141f1f, 3.5px 3.5px #141f1f;
+  font: Bold 5rem;
+}
+
+.contact-bar {
+    width: 12rem;
+    height: 4px;
+    position: absolute;
+    top: 70%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient(#a3c2c2, #141f1f);
+}
+
+.contact-text {
+    height: 5rem;
+    color: rgb(243, 236, 236);
+    font-size: 2rem;
+    text-align: center;
+}
