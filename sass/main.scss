@@ -31,7 +31,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
 
 }
 
@@ -43,7 +42,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 400;
   color: black;
 }
@@ -66,17 +65,21 @@
 }
 
 .redux-logo {
-  width: 9rem;
-  height: 9rem;
-  background-image: url("../img/Redux.png");
-  background-size: cover;
+  width: 6.5rem;
+  height: 6.5rem;
+  background-image: url("../img/Redux-logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 60px #ddd3df, inset 0 0 60px transparent;
+  border-radius: 1rem;
+ 
 }
 
 .nodejs-logo {
   width: 8rem;
   height: 8rem;
-  background-image: url("../img/nodejs.png");
-  background-size: cover;
+  font-size: 6rem;
   margin-left: 8rem;
 }
 
