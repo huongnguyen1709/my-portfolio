@@ -1,6 +1,5 @@
 @import "base/base";
 @import "base/animation";
-@import "base/typography";
 @import "base/title-position";
 
 @import "components/button";
@@ -9,6 +8,7 @@
 @import "components/navigation";
 @import "components/project-card";
 @import "components/skills-bar";
+@import "components/logo";
 
 @import "layout/layout";
 
@@ -16,96 +16,4 @@
 @import "section/about";
 @import "section/project";
 @import "section/contact";
-
-
-
-/* LOGO */
-.logo {
-  width: 60%;
-  height: 20rem;
-  position: absolute;
-  top: 87%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.text-logo {
-  width: 8rem;
-  height: 8rem;
-  margin: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  font-weight: 400;
-  color: black;
-}
-
-.wordpress-logo {
-  font-size: 6rem;
-  color: #1084c7;
-  box-shadow: 0 0 60px #278eca, inset 0 0 60px #91c0db;
-}
-
-.wordpress-text {
-  font-size: 2rem;
-}
-
-.react-logo {
-  font-size: 6rem;
-  color: #03f4fc;
-  margin-bottom: -0.5rem;
-  box-shadow: 0 0 60px #35dfe8, inset 0 0 60px #35dfe8;
-}
-
-.redux-logo {
-  width: 6.5rem;
-  height: 6.5rem;
-  background-image: url("../img/Redux-logo.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 0 0 60px #ddd3df, inset 0 0 60px transparent;
-  border-radius: 1rem;
- 
-}
-
-.nodejs-logo {
-  width: 8rem;
-  height: 8rem;
-  font-size: 6rem;
-  margin-left: 8rem;
-}
-
-/* ROUND */
-/* .round--1 {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    transform: skewY(30deg);
-    background: radial-gradient(ellipse at bottom, #b4c2d3 0%, transparent 100%);
-    box-shadow: 0 0 60px #9dcfcd, inset 0 0 60px #9dcfcd; */
-
-    /* animation-name: spin;
-    animation-duration: 3000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;  */
-/* }
-
-@keyframes spin {
-    from {
-        transform: rotate(0);
-    }
-    to {
-        transform: rotate(20deg);
-    }
-} */
+@import "section/footer";
