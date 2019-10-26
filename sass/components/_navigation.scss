@@ -19,7 +19,6 @@
 .nav-list {
     list-style: none;
     display: flex;
-    margin-left: 10rem;
 }
 
 .nav-link {
@@ -29,8 +28,7 @@
     text-decoration: none;
     /*color: #544738;*/
     color: rgb(93, 106, 117);
-    padding: 2rem;
-    margin-right: 7rem;
+    margin: 5rem;
 }
 
 .nav-link:hover {
