@@ -20,11 +20,14 @@
   }
   
   .bar-name {
-      width: 15%;
+      width: 21%;
       /* background-color: #49a5bf; */
-      background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+
+      /*background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);*/
+      background-image: linear-gradient(to right, #1d8353 0%, #5d4157 100%);
+      
       /* background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%); */
-      font-size: 1.6rem;    
+      font-size: 1.7rem;    
       letter-spacing: 0.1rem;
       
       display: flex;
@@ -36,59 +39,26 @@
       width: 100%;
       height: 100%;
   }
+
   .bar-fill {
       height: 100%;
-      background-image: linear-gradient(to top, #a18cd1 0%, #8ed8f5 100%);
-   
+      /*background-image: linear-gradient(to top, #a18cd1 0%, #8ed8f5 100%);*/
+      /*background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);*/
+      background-image: linear-gradient(to top, #284770 0%, #708a9c 100%);
   }
 
-  @media only screen and (max-width: 1024px) {
-    .container {
-        width: 55%;
-    }
-
-    .bar-name {
-        width: 24%;
-        font-size: 1.5rem; 
-    }
-
+  @include respond(big-desktop) { // width >= 1920px  
     .skills-bar {
-        height: 3rem;
+        height: 5rem;
     }
-  }
 
-  @media only screen and (max-width: 768px) {
+    .bar-name {
+        font-size: 2rem;
+    }
+}
+
+  @include respond(tablet-landscape-pro) { // width <= 1366px  
     .container {
-        width: 65%;
-    } 
-
-    .bar-name {
-        width: 29%;
+        width: 60%;
     }
-  }
-
-  @media only screen and (max-width: 414px) {
-    .skills-bar {
-        height: 2.8rem;
-    }
-
-    .container {
-        width: 80%;
-    }
-
-    .bar-name {
-        width: 40%;
-        
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .skills-bar {
-        height: 2rem;
-    }
-
-    .bar-name {
-        font-size: 1rem;
-       
-    }
-  }
+}

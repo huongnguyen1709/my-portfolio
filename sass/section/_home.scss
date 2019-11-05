@@ -22,27 +22,7 @@
 }
 
 .header-text {
-    /* background: -webkit-linear-gradient(rgb(182, 127, 127), #090a0f); 
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-
     font-family: 'Righteous', cursive;
-
-    /*color: blue;
-	color: #fff;
-	background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #88d8b0 34%);
-	background-size: 300%;
-	 -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-
-  animation: Gradient 5s ease infinite;
-		-webkit-animation: Gradient 15s ease infinite;
-		-moz-animation: Gradient 5s ease infinite;*/
-    
-    /*font: Bold 5rem;*/
-
     background-image: url(https://media.giphy.com/media/2tMuOCL17ObOPNBdfV/giphy.gif);
 	background-size: cover;
     color: transparent;
@@ -96,11 +76,23 @@
 
 .heading-main {
     font-size: 5rem;
-    letter-spacing: 10px;
+    letter-spacing: 1rem;
 }
 
 .heading-sub {
     font-size: 3rem;
-    letter-spacing: 8px;
+    letter-spacing: 0.8rem;
     margin-top: 3rem;
+}
+
+@include respond(big-desktop) { // width >= 1920px  
+    .heading-main {
+        font-size: 6rem;
+        letter-spacing: 1.5rem;
+    }
+
+    .heading-sub {
+        font-size: 3.5rem;
+        letter-spacing: 1rem;
+    }
 }

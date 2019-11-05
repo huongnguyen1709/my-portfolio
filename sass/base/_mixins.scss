@@ -1,0 +1,68 @@
+//MEDIA QUERIY MANAGER
+/* 
+0 - 375px:           Mobile-portrait (IPhone 6,7,8,X)
+
+375 - 414px:         Mobile-portrait-plus (IPhone 6,7,8 plus)
+
+414 - 768px:         Mobile-landscape 
+
+768 - 834px:         Tablet-portrait 
+
+834 - 1024px:        Tablet-portrait-pro
+
+1024 - 1112px:       Tablet-landscape
+
+1112 - 1366px:       Tablet-landscape-pro
+
+1366 - 1440px:       Laptop displays
+
+[1440 - 1680] is where our normal styles apply
+
+1680 - 1920px:       Desktop displays 
+
+1920px + :            Big Desktop
+*/ 
+
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == mobile-portrait {
+        @media (max-width: 375px) { @content }; // 375 px
+    }
+
+    @if $breakpoint == mobile-portrait-plus {
+        @media (max-width: 414px) { @content }; // 414 px
+    }
+
+    @if $breakpoint == mobile-landscape {
+        @media (max-width: 768px) { @content }; // 768 px
+    }
+
+    @if $breakpoint == tablet-portrait  {
+        @media (max-width: 834px) { @content }; // 834 px
+    }
+
+    @if $breakpoint == tablet-portrait-pro  {
+        @media (max-width: 1024px) { @content }; // 1024 px
+    }
+
+    @if $breakpoint == tablet-landscape  {
+        @media (max-width: 1112px) { @content }; // 1112 px
+    }
+
+    @if $breakpoint == tablet-landscape-pro  {
+        @media (max-width: 1366px) { @content }; // 1366 px
+    }
+
+    @if $breakpoint == laptop-displays  {
+        @media (max-width: 1440px) { @content }; // 1440 px
+    }  
+
+    @if $breakpoint == desktop-displays  {
+        @media (min-width: 1680px) { @content }; // 1680 px
+    }
+
+    @if $breakpoint == big-desktop  {
+        @media (min-width: 1920px) { @content }; // 1920 px
+    }
+
+}

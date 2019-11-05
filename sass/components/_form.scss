@@ -21,3 +21,18 @@
     transition: all .2s;
     outline: 0;
 }
+
+.input-height {
+    height: 4rem;
+}
+
+.message-box { 
+    height: 15rem;
+}
+
+@include respond(laptop-displays) { // width <= 1440px  
+   .form {
+        width: calc(100% - 90rem);
+        margin-left: 45rem;
+   }
+}

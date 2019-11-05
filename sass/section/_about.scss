@@ -25,28 +25,22 @@
     background-image: linear-gradient(to right, white, #FF8040);
 }
 
-@media only screen and (max-width: 375px) {
+@include respond(big-desktop) { // width >= 1920px  
     .about-title {
-        font-size: 3rem;
+        font-size: 6rem;
     }
 
     .about-bar {
-        width: 8rem;
-        top: 80%;
-        left: 55%;
-    }
-
-    .about-header { 
-        height: 10rem;
+        top: 75%;
     }
 }
 
 /* DESCRIPTION */
 
 .about-desc { 
-    width: calc(100% - 20rem);
+    width: calc(100% - 14%);
     padding: 3rem 0 3rem 0;
-    margin-left: 10rem;
+    margin-left: 7%;
     border-radius: 20rem 20rem;
     display: flex;
     justify-content: center;
@@ -58,13 +52,13 @@
 }
 
 .profile-picture {
-    width: 40rem;;
-    height: 40rem;
+    width: 35rem;
+    height: 35rem;
     border-radius: 50%;
     background-image: url("../img/Profile_picture.jpg");
     background-position: 30% 50%;
     transform: skewY(5deg);
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .about-text {
@@ -73,26 +67,33 @@
     justify-content: center;
     align-items: center;
     font-size: 2.2rem;
-    line-height: 6rem;
+    line-height: 5.5rem;
     color: #27302f;
     transform: skewY(5deg);
     margin-top: 2rem;
     margin-left: 5rem;
 }
 
-@media only screen and (max-width: 1400px) {
-    .profile-picture {
-        width: 35rem;;
-        height: 35rem;
+@include respond(big-desktop) { // width >= 1920px  
+    .about-text {
+        font-size: 2.8rem;
+        line-height: 6rem;
     }
 
+    .profile-picture {
+        width: 45rem;
+        height: 45rem;
+        background-position: 20% 60%;
+    }
+}
+
+@include respond(laptop-displays) { // width <= 1440px  
     .about-text {
-        font-size: 2.1rem;
         line-height: 5rem;
     }
-} 
+}
 
-@media only screen and (max-width: 1200px) {
+/*@media only screen and (max-width: 1200px) {
     .about-header {
         margin-bottom: 0rem;
     }
@@ -173,46 +174,34 @@
         padding-bottom: 5rem;
         font-size: 2.2rem;
     }
-}
+}*/
 
 
 /* SKILLS PART */
 
 .skills {
     width: 100%;
-    margin-top: 8rem;
+    margin-top: 10rem;
     padding: 2rem 0 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  @media only screen and (max-width: 1200px) {
-    .skills {
-        margin-top: 0rem;
-    }
-  }
-
-  @media only screen and (max-width: 414px) {
-    .skills {
-        margin-top: -5rem;
-    }
-  }
-
-  .skills-heading {
+.skills-heading {
     width: 100%;
     height: 5rem;
     color: black;
     text-shadow: 1px 1px rgb(240, 229, 229), 2px 2px white, 3px 3px white;
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
     letter-spacing: 0.8rem;
-  }
+}
 
-  @media only screen and (max-width: 375px) {
+@include respond(big-desktop) { // width >= 1920px  
     .skills-heading {
-        font-size: 2.5rem;
+        font-size: 4rem;
     }
-  }
+}
   

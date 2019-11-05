@@ -1,14 +1,14 @@
 /* NAVIGATION */
 
 .navigation {
-    width: calc(100% - 80rem);
+    width: 45%;
     height: 6vh;
-    margin-left: 40rem;
     background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
     box-shadow: 0 1rem 1rem rgba(4, 26, 62, 0.5);
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,4 +33,26 @@
 
 .nav-link:hover {
     color: #7eb9be;
+}
+
+@include respond(big-desktop) { // width >= 1920px  
+    .navigation {
+        width: 40%;
+    }
+
+    .nav-link {
+        font-size: 3.5rem;
+    }
+}
+
+@include respond(laptop-displays) { // width <= 1440px  
+    .navigation {
+        width: 50%;
+    }
+}
+
+@include respond(tablet-landscape-pro) { // width <= 1366px  
+    .nav-link {
+        margin: 4.5rem;
+    }
 }
