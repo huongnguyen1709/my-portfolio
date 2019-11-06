@@ -111,10 +111,17 @@ body {
 
 @media (min-width: 1920px) {
   .btn-click {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     width: 16rem;
     height: 6rem;
-    margin-top: 4.5rem; } }
+    margin-top: 4rem; } }
+
+@media (max-width: 1112px) {
+  .btn-click {
+    font-size: 2.3rem;
+    width: 15.5rem;
+    height: 5.5rem;
+    margin-top: 3rem; } }
 
 .btn-click:hover {
   text-shadow: 0px 0px 6px white;
@@ -218,13 +225,15 @@ body {
   height: 4rem;
   font-size: 1.5rem;
   border-radius: 4px;
-  background: linear-gradient(to right, #67b26b, #4ca2cb);
+  background: linear-gradient(to right, #7fc0b8, #1bb4a2);
   border: none;
+  box-shadow: 0px 5px 40px -5px rgba(0, 0, 0, 0.57);
   color: #FFFFFF;
   transition: all 0.4s;
   cursor: pointer;
   margin: 5px;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  float: right; }
 
 .btn-send:hover {
   box-shadow: 4px 8px #3a7999; }
@@ -260,9 +269,7 @@ body {
   text-shadow: 1px 1px 8px white; }
 
 .form {
-  width: calc(100% - 100rem);
-  height: 45rem;
-  margin-left: 50rem; }
+  width: 40%; }
 
 .label-form {
   font-size: 2rem;
@@ -286,10 +293,13 @@ body {
 .message-box {
   height: 15rem; }
 
-@media (max-width: 1440px) {
+@media (max-width: 1366px) {
   .form {
-    width: calc(100% - 90rem);
-    margin-left: 45rem; } }
+    width: 45%; } }
+
+@media (max-width: 1112px) {
+  .form {
+    width: 50%; } }
 
 /* GLOBE */
 .view {
@@ -420,9 +430,31 @@ body {
   .nav-link {
     margin: 4.5rem; } }
 
+@media (max-width: 1112px) {
+  .navigation {
+    width: 55%; }
+  .nav-link {
+    margin: 4rem; } }
+
+@media (max-width: 1024px) {
+  .navigation {
+    width: 60%; }
+  .nav-link {
+    margin: 3.5rem; } }
+
+@media (max-width: 834px) {
+  .navigation {
+    width: 65%; }
+  .nav-link {
+    margin: 3rem; } }
+
 /* PROJECT CARD CONTAINER */
 .card-container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* background-color: grey; */
   /* display: flex;
     flex-wrap: wrap;
@@ -431,9 +463,8 @@ body {
 
 /* EVERY PROJECT CARD */
 .card {
-  width: calc(100% - 20rem);
+  width: 80%;
   height: 40rem;
-  margin-left: 10rem;
   margin-bottom: 5rem;
   /* background-color: orange; */
   display: flex;
@@ -450,7 +481,7 @@ body {
   align-items: center; }
 
 .card-img {
-  width: 60rem;
+  width: 70%;
   height: 100%;
   position: relative;
   /* background-color: rosybrown; */
@@ -513,7 +544,7 @@ body {
   width: 21%;
   /* background-color: #49a5bf; */
   /*background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);*/
-  background-image: linear-gradient(to right, #1d8353 0%, #5d4157 100%);
+  background-image: linear-gradient(to right, #9b5886 0%, #ad3780 100%);
   /* background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%); */
   font-size: 1.7rem;
   letter-spacing: 0.1rem;
@@ -529,7 +560,7 @@ body {
   height: 100%;
   /*background-image: linear-gradient(to top, #a18cd1 0%, #8ed8f5 100%);*/
   /*background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);*/
-  background-image: linear-gradient(to top, #284770 0%, #708a9c 100%); }
+  background-image: linear-gradient(to top, #dbd6e4 0%, #8a65cf 100%); }
 
 @media (min-width: 1920px) {
   .skills-bar {
@@ -540,6 +571,14 @@ body {
 @media (max-width: 1366px) {
   .container {
     width: 60%; } }
+
+@media (max-width: 1112px) {
+  .bar-name {
+    width: 30%; } }
+
+@media (max-width: 834px) {
+  .container {
+    width: 70%; } }
 
 /* LOGO */
 .logo-container {
@@ -589,6 +628,16 @@ body {
   .react-logo {
     font-size: 7.5rem; } }
 
+@media (max-width: 1112px) {
+  .logo-container {
+    width: 70%; } }
+
+@media (max-width: 834px) {
+  .logo-container {
+    width: 85%; }
+  .logo {
+    margin: 7rem; } }
+
 /* HEADER */
 .header {
   width: 100%;
@@ -636,7 +685,10 @@ body {
   width: 100%;
   position: absolute;
   top: 5rem;
-  left: 0; }
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 /* FOOTER */
 .footer {
@@ -672,6 +724,7 @@ body {
   -webkit-background-clip: text; }
 
 .border {
+  width: 100%;
   padding: 0;
   margin-left: 5rem;
   background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #88d8b0 34%);
@@ -725,6 +778,27 @@ body {
     font-size: 3.5rem;
     letter-spacing: 1rem; } }
 
+@media (max-width: 1366px) {
+  .header-text-box {
+    width: 80%; } }
+
+@media (max-width: 1112px) {
+  .heading-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem; } }
+
+@media (max-width: 1024px) {
+  .header-text-box {
+    left: 47%; } }
+
+@media (max-width: 834px) {
+  .header-text-box {
+    width: 90%;
+    left: 45%; } }
+
 /* ABOUT HEADER PART */
 .about-header {
   width: 100%;
@@ -753,6 +827,10 @@ body {
     font-size: 6rem; }
   .about-bar {
     top: 75%; } }
+
+@media (max-width: 1112px) {
+  .about-header {
+    margin-bottom: 3rem; } }
 
 /* DESCRIPTION */
 .about-desc {
@@ -801,6 +879,43 @@ body {
 @media (max-width: 1440px) {
   .about-text {
     line-height: 5rem; } }
+
+@media (max-width: 1366px) {
+  .profile-picture {
+    width: 32rem;
+    height: 32rem;
+    background-position: 30% 40%; }
+  .about-text {
+    line-height: 4.5rem; } }
+
+@media (max-width: 1112px) {
+  .about-desc {
+    width: 100%;
+    margin-left: 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+    box-shadow: none;
+    transform: skewY(0deg); }
+  .profile-picture {
+    width: 40rem;
+    height: 40rem;
+    margin-bottom: 5rem;
+    margin-right: 0rem;
+    margin-left: 2rem;
+    background-position: 25% 50%;
+    transform: skewY(0deg); }
+  .about-text {
+    width: 60%;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    line-height: 6rem;
+    transform: skewY(0deg); } }
+
+@media (max-width: 834px) {
+  .about-text {
+    width: 70%; } }
 
 /*@media only screen and (max-width: 1200px) {
     .about-header {
@@ -906,6 +1021,10 @@ body {
 @media (min-width: 1920px) {
   .skills-heading {
     font-size: 4rem; } }
+
+@media (max-width: 1112px) {
+  .skills {
+    margin-top: 2rem; } }
 
 .project-header {
   width: 100%;

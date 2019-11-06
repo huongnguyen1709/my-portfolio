@@ -2,7 +2,10 @@
 
 .card-container {
     width: 100%;
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* background-color: grey; */
 
     /* display: flex;
@@ -15,9 +18,8 @@
 /* EVERY PROJECT CARD */
 
 .card {
-    width: calc(100% - 20rem);
+    width: 80%;
     height: 40rem;
-    margin-left: 10rem;
     margin-bottom: 5rem;
     /* background-color: orange; */
     display: flex;
@@ -37,7 +39,7 @@
 }
 
 .card-img {
-    width: 60rem;
+    width: 70%;
     height: 100%;
     position: relative;
     /* background-color: rosybrown; */

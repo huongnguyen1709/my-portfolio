@@ -56,3 +56,33 @@
         margin: 4.5rem;
     }
 }
+
+@include respond(tablet-landscape) { // width <= 1112px  
+    .navigation {
+        width: 55%;
+    }
+
+    .nav-link {
+        margin: 4rem;
+    }
+}
+
+@include respond(tablet-portrait-pro) { // width <= 1024px  
+    .navigation {
+        width: 60%;
+    }
+
+    .nav-link {
+        margin: 3.5rem;
+    }
+}
+
+@include respond(tablet-portrait) { // width <= 834px  
+    .navigation {
+        width: 65%;
+    }
+
+    .nav-link {
+        margin: 3rem;
+    }
+}

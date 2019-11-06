@@ -57,3 +57,19 @@
         font-size: 7.5rem;
     }
 }
+
+@include respond(tablet-landscape) { // width <= 1112px  
+    .logo-container {
+        width: 70%;
+    }
+}  
+
+@include respond(tablet-portrait) { // width <= 834px  
+    .logo-container {
+        width: 85%;
+    }
+
+    .logo {
+        margin: 7rem;
+    }
+}

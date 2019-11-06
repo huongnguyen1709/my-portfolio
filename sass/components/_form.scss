@@ -1,7 +1,5 @@
 .form {
-    width: calc(100% - 100rem);
-    height: 45rem;
-    margin-left: 50rem;
+    width: 40%;
 }
 
 .label-form {
@@ -30,9 +28,14 @@
     height: 15rem;
 }
 
-@include respond(laptop-displays) { // width <= 1440px  
-   .form {
-        width: calc(100% - 90rem);
-        margin-left: 45rem;
+@include respond(tablet-landscape-pro) { // width <= 1366px  
+    .form {
+        width: 45%;
    }
 }
+
+@include respond(tablet-landscape) { // width <= 1112px  
+    .form {
+        width: 50%;
+   }
+}  

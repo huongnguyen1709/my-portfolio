@@ -35,6 +35,12 @@
     }
 }
 
+@include respond(tablet-landscape) { // width <= 1112px  
+    .about-header {
+        margin-bottom: 3rem;
+    }
+}
+
 /* DESCRIPTION */
 
 .about-desc { 
@@ -90,6 +96,55 @@
 @include respond(laptop-displays) { // width <= 1440px  
     .about-text {
         line-height: 5rem;
+    }
+}
+
+@include respond(tablet-landscape-pro) { // width <= 1366px  
+    .profile-picture {
+        width: 32rem;
+        height: 32rem;
+        background-position: 30% 40%;
+    }
+
+    .about-text {
+        line-height: 4.5rem;
+    }
+} 
+
+@include respond(tablet-landscape) { // width <= 1112px  
+    .about-desc {
+        width: 100%;
+        margin-left: 0rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: none;
+        box-shadow: none;
+        transform: skewY(0deg);
+    }
+
+    .profile-picture {
+        width: 40rem;;
+        height: 40rem;
+        margin-bottom: 5rem;
+        margin-right: 0rem;
+        margin-left: 2rem;
+        background-position: 25% 50%;
+        transform: skewY(0deg);
+    }
+
+    .about-text {
+        width: 60%;
+        margin-left: 2rem;
+        font-size: 2.5rem;
+        line-height: 6rem;  
+        transform: skewY(0deg);
+    }
+}
+
+@include respond(tablet-portrait) { // width <= 834px  
+    .about-text {
+        width: 70%;
     }
 }
 
@@ -204,4 +259,9 @@
         font-size: 4rem;
     }
 }
-  
+
+@include respond(tablet-landscape) { // width <= 1112px  
+    .skills {
+        margin-top: 2rem;
+    }
+} 

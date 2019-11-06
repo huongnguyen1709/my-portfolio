@@ -22,10 +22,19 @@
 
 @include respond(big-desktop) { // width >= 1920px  
     .btn-click {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         width: 16rem;
         height: 6rem;  
-        margin-top: 4.5rem;
+        margin-top: 4rem;
+    }
+}
+
+@include respond(tablet-landscape) { // width <= 1112px  
+    .btn-click {
+        font-size: 2.3rem;
+        width: 15.5rem;
+        height: 5.5rem; 
+        margin-top: 3rem;
     }
 }
   
@@ -153,13 +162,15 @@
   height: 4rem;
   font-size: 1.5rem;
   border-radius: 4px;
-  background: linear-gradient(to right, #67b26b, #4ca2cb);
+  background: linear-gradient(to right, rgb(127, 192, 184), rgb(27, 180, 162));
   border: none;
+  box-shadow: 0px 5px 40px -5px rgba(0,0,0,0.57);
   color: #FFFFFF;
   transition: all 0.4s;
   cursor: pointer;
   margin: 5px;
   transition: all 0.3s;
+  float: right;
 }
 
 .btn-send:hover {

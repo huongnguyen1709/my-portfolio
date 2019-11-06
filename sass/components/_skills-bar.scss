@@ -24,7 +24,7 @@
       /* background-color: #49a5bf; */
 
       /*background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);*/
-      background-image: linear-gradient(to right, #1d8353 0%, #5d4157 100%);
+      background-image: linear-gradient(to right, #9b5886 0%, #ad3780 100%);
       
       /* background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%); */
       font-size: 1.7rem;    
@@ -44,10 +44,13 @@
       height: 100%;
       /*background-image: linear-gradient(to top, #a18cd1 0%, #8ed8f5 100%);*/
       /*background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);*/
-      background-image: linear-gradient(to top, #284770 0%, #708a9c 100%);
+    //   background-image: linear-gradient(to top, #284770 0%, #708a9c 100%);
+    // background-color: rgb(204, 156, 178);
+    // background-image: linear-gradient(to top, rgb(173, 125, 137) 0%, rgb(190, 115, 153) 100%)
+    background-image: linear-gradient(to top, #dbd6e4 0%, #8a65cf 100%)
   }
 
-  @include respond(big-desktop) { // width >= 1920px  
+@include respond(big-desktop) { // width >= 1920px  
     .skills-bar {
         height: 5rem;
     }
@@ -57,8 +60,20 @@
     }
 }
 
-  @include respond(tablet-landscape-pro) { // width <= 1366px  
+@include respond(tablet-landscape-pro) { // width <= 1366px  
     .container {
         width: 60%;
+    }
+}
+
+@include respond(tablet-landscape) { // width <= 1112px  
+    .bar-name {
+        width: 30%;
+    }
+}  
+
+@include respond(tablet-portrait) { // width <= 834px  
+    .container {
+        width: 70%;
     }
 }
