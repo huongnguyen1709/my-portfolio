@@ -16,7 +16,7 @@
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
     display: flex;
     color: white;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
   
   .bar-name {
@@ -47,7 +47,7 @@
     //   background-image: linear-gradient(to top, #284770 0%, #708a9c 100%);
     // background-color: rgb(204, 156, 178);
     // background-image: linear-gradient(to top, rgb(173, 125, 137) 0%, rgb(190, 115, 153) 100%)
-    background-image: linear-gradient(to top, #dbd6e4 0%, #8a65cf 100%)
+    background-image: linear-gradient(to top, #b7accc 0%, #7753bb 100%)
   }
 
 @include respond(big-desktop) { // width >= 1920px  
@@ -56,6 +56,13 @@
     }
 
     .bar-name {
+        font-size: 2rem;
+    }
+}
+
+@include respond(laptop-displays) { // width <= 1440px  
+    .bar-name {
+        width: 25%;
         font-size: 2rem;
     }
 }

@@ -9,7 +9,7 @@
     color: #FFF;
     text-shadow: 1px 1px #FF8040, 2px 2px #FF8040, 3px 3px #FF8040;
     font: Bold 5rem;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .project-bar {
@@ -30,5 +30,11 @@
 
     .project-bar {
         top: 75%;
+    }
+}
+
+@include respond(tablet-landscape) { // width <= 1112px  
+    .project-header {
+        margin-bottom: 2rem;
     }
 }

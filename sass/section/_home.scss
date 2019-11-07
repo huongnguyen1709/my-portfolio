@@ -5,7 +5,6 @@
     top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
-   
 }
 
 @keyframes Gradient {
@@ -98,6 +97,12 @@
     }
 }
 
+@include respond(laptop-displays) { // width <= 1440px  
+    .header-text-box {
+        left: 48%;
+    }
+}
+
 @include respond(tablet-landscape-pro) { // width <= 1366px  
     .header-text-box {
         width: 80%;
@@ -124,5 +129,12 @@
     .header-text-box {
         width: 90%;
         left: 45%;
+    }
+}
+
+@include respond(mobile-landscape) { // width <= 768px  
+    .header-text-box {
+        width: 95%;
+        left: 44%;
     }
 }

@@ -148,6 +148,12 @@
     }
 }
 
+@include respond(mobile-landscape) { // width <= 768px  
+    .about-text {
+        width: 80%;
+    }
+}
+
 /*@media only screen and (max-width: 1200px) {
     .about-header {
         margin-bottom: 0rem;

@@ -28,3 +28,9 @@
     font-size: 2rem;
     text-align: center;
 }
+
+@include respond(tablet-landscape) { // width <= 1112px 
+    .contact-header {
+        height: 15rem;
+    }
+}

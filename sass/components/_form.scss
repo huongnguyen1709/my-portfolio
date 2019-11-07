@@ -39,3 +39,15 @@
         width: 50%;
    }
 }  
+
+@include respond(tablet-portrait) { // width <= 834px  
+    .form {
+        width: 55%;
+   }
+}
+
+@include respond(mobile-landscape) { // width <= 768px  
+    .form {
+        width: 60%;
+   }
+}

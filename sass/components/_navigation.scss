@@ -86,3 +86,13 @@
         margin: 3rem;
     }
 }
+
+@include respond(mobile-landscape) { // width <= 768px  
+    .navigation {
+        width: 70%;
+    }
+
+    .nav-link {
+        margin: 2.5rem;
+    }
+}

@@ -67,6 +67,18 @@
     margin-left: -2rem;  
  }
 
+@include respond(tablet-landscape) { // width <= 1112px  
+    .btn {
+        margin-left: -5rem;
+    }
+}
+
+@include respond(mobile-landscape) { // width <= 768px  
+    .btn {
+        margin-left: 0;
+    }
+}
+
 
 /* BUTTON VIEW */
 
@@ -158,9 +170,9 @@
 /* BUTTON SEND */
 
 .btn-send {
-  width: 10rem;
-  height: 4rem;
-  font-size: 1.5rem;
+  width: 12rem;
+  height: 4.5rem;
+  font-size: 2rem;
   border-radius: 4px;
   background: linear-gradient(to right, rgb(127, 192, 184), rgb(27, 180, 162));
   border: none;
@@ -168,7 +180,7 @@
   color: #FFFFFF;
   transition: all 0.4s;
   cursor: pointer;
-  margin: 5px;
+  margin-top: 2rem;
   transition: all 0.3s;
   float: right;
 }
@@ -180,6 +192,12 @@
 .btn-send:active {
   transform: translateY(3px);
   box-shadow: 5px 9px #3a7999;
+}
+
+@include respond(tablet-landscape) { // width <= 1112px  
+    .btn-send {
+        margin-top: 0;
+    }
 }
 
 
