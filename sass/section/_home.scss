@@ -3,7 +3,7 @@
     height: 40rem;
     position: absolute;
     top: 45%;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%,-50%);
 }
 
@@ -136,5 +136,40 @@
     .header-text-box {
         width: 95%;
         left: 44%;
+    }
+}
+
+@include respond(mobile-portrait-plus) { // width <= 414px  
+    .header-text-box {
+        width: 100%;
+        left: 50%;
+    }
+
+    .border {
+        background: transparent;
+        margin-left: 0;
+    }
+
+    .inner {
+        background: transparent;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-text {
+        width: 100%;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 3rem;
+    }
+
+    .heading-main {
+        font-size: 3.5rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .heading-sub {
+        font-size: 2.5rem;
+        letter-spacing: 0.5rem;
     }
 }

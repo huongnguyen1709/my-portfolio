@@ -474,6 +474,10 @@ body {
   .nav-link {
     margin: 2.5rem; } }
 
+@media (max-width: 414px) {
+  .navigation {
+    visibility: hidden; } }
+
 /* PROJECT CARD CONTAINER */
 .card-container {
   width: 100%;
@@ -585,13 +589,16 @@ body {
 @media (max-width: 834px) {
   .card-img {
     width: 75%;
-    margin: 0 3rem 0 -2rem; } }
+    margin: 0 3rem 0 -2rem; }
+  .card-desc {
+    margin: 0 0 8rem 3rem; } }
 
 @media (max-width: 768px) {
   .img-2 {
     left: 65%; }
   .card-desc {
-    width: 90%; } }
+    width: 90%;
+    margin: 0 0 8rem 0; } }
 
 /* SKILLS BAR CONTAINER */
 .container {
@@ -654,6 +661,21 @@ body {
   .container {
     width: 70%; } }
 
+@media (max-width: 768px) {
+  .container {
+    width: 75%; }
+  .bar-name {
+    width: 35%; } }
+
+@media (max-width: 414px) {
+  .container {
+    width: 80%; }
+  .skills-bar {
+    height: 2rem; }
+  .bar-name {
+    width: 45%;
+    font-size: 1.5rem; } }
+
 /* LOGO */
 .logo-container {
   width: 50%;
@@ -711,6 +733,85 @@ body {
     width: 85%; }
   .logo {
     margin: 7rem; } }
+
+@media (max-width: 414px) {
+  .logo-container {
+    width: 100%;
+    left: 50%; }
+  .logo {
+    width: 3rem;
+    height: 3rem;
+    margin: 5rem; }
+  .htmlcssjs {
+    width: 6rem;
+    height: 6rem; }
+  .wordpress-logo {
+    font-size: 6rem; }
+  .react-logo {
+    font-size: 6rem; } }
+
+/* HAMBURGER BUTTON */
+.ham-btn {
+  position: fixed;
+  top: 3%;
+  right: 20%;
+  width: 6rem;
+  height: 5rem;
+  padding: .4rem .8rem;
+  background: #364652;
+  z-index: 200;
+  visibility: hidden; }
+
+.ham-btn span {
+  width: 100%;
+  height: .4rem;
+  display: block;
+  background: #fff;
+  margin: .7rem 0;
+  transition: .5s; }
+
+.toggle-menu {
+  width: 100%;
+  height: 100vh;
+  background: #364652;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 101;
+  opacity: 0.5;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  position: absolute; }
+
+.toggle-menu a {
+  color: #fff;
+  font-size: 3.5rem; }
+
+.ham-btn.active span {
+  position: absolute;
+  width: calc(100% - 1.6rem);
+  top: calc(50% - .8rem); }
+
+.ham-btn.active span:nth-child(1) {
+  transform: rotate(45deg); }
+
+.ham-btn.active span:nth-child(3) {
+  transform: rotate(-45deg); }
+
+.ham-btn.active span:nth-child(2) {
+  display: none; }
+
+.toggle-menu.active {
+  opacity: 1;
+  transform: none;
+  -webkit-transform: none;
+  -o-transform: none; }
+
+@media (max-width: 414px) {
+  .ham-btn {
+    visibility: visible; } }
 
 /* HEADER */
 .header {
@@ -791,7 +892,7 @@ body {
   height: 40rem;
   position: absolute;
   top: 45%;
-  left: 50%;
+  left: 48%;
   transform: translate(-50%, -50%); }
 
 @keyframes Gradient {
@@ -897,6 +998,29 @@ body {
     width: 95%;
     left: 44%; } }
 
+@media (max-width: 414px) {
+  .header-text-box {
+    width: 100%;
+    left: 50%; }
+  .border {
+    background: transparent;
+    margin-left: 0; }
+  .inner {
+    background: transparent;
+    padding: 0;
+    margin: 0; }
+  .header-text {
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 3rem; }
+  .heading-main {
+    font-size: 3.5rem;
+    letter-spacing: 0.5rem; }
+  .heading-sub {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem; } }
+
 /* ABOUT HEADER PART */
 .about-header {
   width: 100%;
@@ -913,7 +1037,7 @@ body {
 
 .about-bar {
   width: 12rem;
-  height: 4px;
+  height: .4rem;
   position: absolute;
   top: 70%;
   left: 51%;
@@ -929,6 +1053,17 @@ body {
 @media (max-width: 1112px) {
   .about-header {
     margin-bottom: 3rem; } }
+
+@media (max-width: 414px) {
+  .about-header {
+    height: 15rem;
+    margin-bottom: 0; }
+  .about-title {
+    font-size: 4rem; }
+  .about-bar {
+    width: 10rem;
+    height: .3rem;
+    left: 55%; } }
 
 /* DESCRIPTION */
 .about-desc {
@@ -1018,6 +1153,16 @@ body {
 @media (max-width: 768px) {
   .about-text {
     width: 80%; } }
+
+@media (max-width: 414px) {
+  .profile-picture {
+    width: 30rem;
+    height: 30rem;
+    background-position: 30% 40%; }
+  .about-text {
+    font-size: 2rem;
+    line-height: 4rem;
+    margin: 0; } }
 
 /*@media only screen and (max-width: 1200px) {
     .about-header {
@@ -1128,6 +1273,11 @@ body {
   .skills {
     margin-top: 2rem; } }
 
+@media (max-width: 414px) {
+  .skills-heading {
+    font-size: 3rem;
+    letter-spacing: 0.6rem; } }
+
 .project-header {
   width: 100%;
   height: 20rem;
@@ -1159,6 +1309,16 @@ body {
 @media (max-width: 1112px) {
   .project-header {
     margin-bottom: 2rem; } }
+
+@media (max-width: 414px) {
+  .project-header {
+    height: 15rem; }
+  .project-title {
+    font-size: 3.5rem; }
+  .project-bar {
+    width: 11rem;
+    top: 71%;
+    left: 55%; } }
 
 .contact-header {
   width: 100%;

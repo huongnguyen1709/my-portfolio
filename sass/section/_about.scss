@@ -17,7 +17,7 @@
 
 .about-bar {
     width: 12rem;
-    height: 4px;
+    height: .4rem;
     position: absolute;
     top: 70%;
     left: 51%;
@@ -39,6 +39,24 @@
     .about-header {
         margin-bottom: 3rem;
     }
+}
+
+@include respond(mobile-portrait-plus) { // width <= 414px  
+    .about-header {
+        height: 15rem;
+        margin-bottom: 0;
+    }
+
+    .about-title {
+        font-size: 4rem;
+    }
+
+    .about-bar {
+        width: 10rem;
+        height: .3rem;
+        left: 55%;
+    }
+
 }
 
 /* DESCRIPTION */
@@ -151,6 +169,20 @@
 @include respond(mobile-landscape) { // width <= 768px  
     .about-text {
         width: 80%;
+    }
+}
+
+@include respond(mobile-portrait-plus) { // width <= 414px  
+    .profile-picture {
+        width: 30rem;;
+        height: 30rem;
+        background-position: 30% 40%;
+    }
+
+    .about-text {
+        font-size: 2rem;
+        line-height: 4rem; 
+        margin: 0;
     }
 }
 
@@ -271,3 +303,10 @@
         margin-top: 2rem;
     }
 } 
+
+@include respond(mobile-portrait-plus) { // width <= 414px  
+    .skills-heading {
+        font-size: 3rem;
+        letter-spacing: 0.6rem;
+    }
+}

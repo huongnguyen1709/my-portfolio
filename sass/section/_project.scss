@@ -38,3 +38,19 @@
         margin-bottom: 2rem;
     }
 }
+
+@include respond(mobile-portrait-plus) { // width <= 414px  
+    .project-header {
+        height: 15rem;
+    }
+
+    .project-title {
+        font-size: 3.5rem;
+    }
+
+    .project-bar {
+        width: 11rem;
+        top: 71%;
+        left: 55%;
+    }
+}

@@ -19,7 +19,16 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: 0}, 800);
     });
     
+    /* HAMBURGER MENU */
+    $('.ham-btn').click(function() {
+        $('.ham-btn').toggleClass('active');
+        $('.toggle-menu').toggleClass('active');
+    });
 })
+
+
+
+
 
 
 

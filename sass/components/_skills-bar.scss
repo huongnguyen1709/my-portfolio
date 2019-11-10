@@ -84,3 +84,28 @@
         width: 70%;
     }
 }
+
+@include respond(mobile-landscape) { // width <= 768px 
+    .container {
+        width: 75%;
+    }
+
+    .bar-name {
+        width: 35%;
+    }
+}
+
+@include respond(mobile-portrait-plus) { // width <= 414px  
+    .container {
+        width: 80%;
+    }
+
+    .skills-bar {
+        height: 2rem;
+    }
+
+    .bar-name {
+        width: 45%;
+        font-size: 1.5rem;
+    }
+}

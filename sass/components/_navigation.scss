@@ -96,3 +96,9 @@
         margin: 2.5rem;
     }
 }
+
+@include respond(mobile-portrait-plus) { // width <= 414px  
+    .navigation {
+        visibility: hidden;
+    }
+}

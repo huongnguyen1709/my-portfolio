@@ -148,6 +148,10 @@
         width: 75%;
         margin: 0 3rem 0 -2rem;
     }
+
+    .card-desc {
+        margin: 0 0 8rem 3rem;
+    }
 }
 
 @include respond(mobile-landscape) { // width <= 768px 
@@ -157,5 +161,6 @@
 
     .card-desc {
         width: 90%;
+        margin: 0 0 8rem 0;
     }
 }
