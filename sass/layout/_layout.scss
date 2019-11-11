@@ -58,6 +58,14 @@
     }
 }
 
+@include respond(mobile-portrait-plus) { // width <= 414px  
+    .section-project {
+        height: 278rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
+    }
+}
+
 /* SECTION CONTACT */
 .section-contact {
     width: 100%;
@@ -84,9 +92,13 @@
     }
 }
 
-@include respond(mobile-landscape) { // width <= 768px  
+@include respond(mobile-portrait-plus) { // width <= 414px  
+    .section-contact {
+        height: 85rem;
+    }
+
     .position-contact {
-        
+        top: 16rem;
     }
 }
 
@@ -94,7 +106,17 @@
 /* FOOTER */
 .footer {
     width: 100%;
-    height: 10rem;
+    height: 12rem;
     background-color: rgb(55, 59, 77);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@include respond(mobile-portrait-plus) { // width <= 414px  
+    .footer {
+        height: 14rem;
+    }
 }

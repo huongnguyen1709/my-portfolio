@@ -34,3 +34,18 @@
         height: 15rem;
     }
 }
+
+@include respond(mobile-portrait-plus) { // width <= 414px  
+    .contact-header {
+        height: 12rem;
+    }
+
+    .contact-title {
+        font-size: 3.5rem;
+    }
+
+    .contact-bar {
+        top: 75%;
+        left: 57%;
+    }
+}

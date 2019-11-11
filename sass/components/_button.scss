@@ -62,8 +62,7 @@
 /* BUTTON VIEW & GITHUB */
 
 .btn {
-    width: 11rem;
-    height: 15rem;
+    width: 30rem;
     margin-left: -2rem;  
  }
 
@@ -79,15 +78,46 @@
     }
 }
 
+@include respond(mobile-portrait-plus) { // width <= 414px      
+    .btn {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+    }
+
+    .btn::before, .btn::after {
+    content: '';
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255,255,255,0.75);
+    }
+
+    .btn::before {
+        width: 12rem;
+        height: .3rem;
+        border-radius: .8rem;
+    }
+
+    .btn::after {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 100%;
+        bottom: -5.5rem;
+    }
+}
+
 
 /* BUTTON VIEW */
 
 .btn-view {
-    width: 100%;
-    height: 5rem;  
+    width: 11rem;
+    height: 5rem;
     margin-bottom: 2rem; 
     border: 2px solid;
-    border-radius: 7px;
+    border-radius: .7rem;
     cursor: pointer;
     outline: 0;
     -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
@@ -137,17 +167,24 @@
     border-color: #e63b1b;
 }
 
+@include respond(mobile-portrait-plus) { // width <= 414px  
+    .btn-view {
+        margin-bottom: 0;
+    }
+}
+
 
 /* BUTTON GITHUB */
 
   .btn-link {
-    width: 100%;
+    width: 11rem;
     height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E48681;
-	border-color: 2px solid #E48681;
+    background-color: rgb(184, 36, 28);
+    border: 2px solid rgb(202, 48, 48);
+    border-radius: .7rem;
     text-shadow: 0 1px 0 rgba(0,0,0,0.5);
     text-decoration: none;
     font-size: 1.5rem;

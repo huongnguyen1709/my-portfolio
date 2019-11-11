@@ -164,3 +164,41 @@
         margin: 0 0 8rem 0;
     }
 }
+
+@include respond(mobile-portrait-plus) { // width <= 414px  
+    .card {
+        width: 100%;
+        margin: 0 0 7rem 0;
+    }
+
+    .card-desc {
+        width: 100%;
+        padding: 0 4rem;
+        font-size: 2rem;
+        margin: 0 0 4rem 0;
+    }
+
+    .card-title {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .project-view {
+        flex-direction: column;
+    }
+
+    .card-img {
+        width: 100%;
+        margin: 0 0 0 2rem;
+        
+    }
+
+    .img-style {
+        width: 22rem;
+        height: 14rem;
+    }
+
+    .img-1 {
+        top: 60%;
+    }
+}
