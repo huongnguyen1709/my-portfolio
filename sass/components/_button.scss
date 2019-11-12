@@ -61,17 +61,6 @@
 
 /* BUTTON VIEW & GITHUB */
 
-.btn {
-    width: 30rem;
-    margin-left: -2rem;  
- }
-
-@include respond(tablet-landscape) { // width <= 1112px  
-    .btn {
-        margin-left: -5rem;
-    }
-}
-
 @include respond(mobile-landscape) { // width <= 768px  
     .btn {
         margin-left: 0;
@@ -89,7 +78,7 @@
     .btn::before, .btn::after {
     content: '';
     position: absolute;
-    bottom: -5rem;
+    bottom: -7rem;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(255,255,255,0.75);
@@ -105,7 +94,7 @@
         width: 1.5rem;
         height: 1.5rem;
         border-radius: 100%;
-        bottom: -5.5rem;
+        bottom: -7.6rem;
     }
 }
 
@@ -113,8 +102,8 @@
 /* BUTTON VIEW */
 
 .btn-view {
-    width: 11rem;
-    height: 5rem;
+    width: 10rem;
+    height: 4rem;
     margin-bottom: 2rem; 
     border: 2px solid;
     border-radius: .7rem;
@@ -170,6 +159,7 @@
 @include respond(mobile-portrait-plus) { // width <= 414px  
     .btn-view {
         margin-bottom: 0;
+        margin-right: 2rem;
     }
 }
 
@@ -177,8 +167,8 @@
 /* BUTTON GITHUB */
 
   .btn-link {
-    width: 11rem;
-    height: 5rem;
+    width: 10rem;
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,7 +223,13 @@
 
 @include respond(tablet-landscape) { // width <= 1112px  
     .btn-send {
-        margin-top: 0;
+        margin-top: 2rem;
+    }
+}
+
+@include respond(tablet-portrait) { // width <= 834px  
+    .btn-send {
+        margin-top: 1rem;
     }
 }
 

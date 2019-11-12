@@ -19,16 +19,17 @@
 
 .card {
     width: 90%;
-    margin: 6rem 0 6rem 0;
+    margin: 5rem 0;
     /* background-color: orange; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .project-view {
-    width: 65%;
+    width: 55%;
     height: 35rem;
+    
     /* background-color: blue; */
 
     display: flex;
@@ -37,36 +38,34 @@
 }
 
 .card-img {
-    width: 70%;
+    width: 100%;
     height: 100%;
     position: relative;
     /* background-color: rosybrown; */
-    margin: 0 5rem 0 -2rem;
+  
 }
 
 .img-style {
-    width: 30rem;
-    height: 20rem;
+    width: 25rem;
+    height: 15rem;
     background-size: cover;
     background-position: center;
     position: absolute;
+    border: 0.2rem solid rgb(88, 6, 10);
 }
 
 .img-1 {
-    top: 70%;
+    top: 60%;
     left: 40%;
     transform: translate(-50%,-50%);
     z-index: 50;
-   
-    border: 0.5rem solid rgb(49, 45, 45);
 }
 
 .img-2 {
-    top: 45%;
-    left: 70%;
+    top: 40%;
+    left: 65%;
     transform: translate(-50%,-50%);
     z-index: 30;
-    border: 0.5rem solid rgb(49, 45, 45);
 }
 
 .img-3 {
@@ -74,7 +73,6 @@
     left: 30%;
     transform: translate(-50%,-50%);
     z-index: 10;
-    border: 0.5rem solid rgb(49, 45, 45);
 }
 
 
@@ -83,19 +81,24 @@
 .card-desc {
     width: 35%;
     font-size: 2rem;
-    
+    margin-left: 10rem;
     color: black;
     padding: 2rem 0 10rem 0;
-    margin-left: 5rem;
+   
 }
 
 .card-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
     margin-bottom: 3rem;
+    color: rgb(158, 42, 48);
 }
 
-
+@include respond(desktop-displays) { // width >= 1680px  
+    .card-desc {
+        font-size: 2.2rem;
+    }
+}
 
 @include respond(laptop-displays) { // width <= 1440px  
     .card-img {
@@ -105,9 +108,10 @@
 
 @include respond(tablet-landscape) { // width <= 1112px  
     .card {
+        width: 100%;
         flex-direction: column;
         justify-content: center;
-        margin: 0 0 8rem 0;
+        margin: 0 0 3rem 0;
     }
 
     .project-view {
@@ -116,7 +120,8 @@
     }
 
     .card-img {
-        margin: 0 0 0 -2rem;
+        width: 60%;
+        margin: 0 0 0 -5rem;
     }
 
     .img-1 {
@@ -131,7 +136,7 @@
     .card-desc {
         width: 90%;
         padding: 0;
-        margin: 0 0 8rem 10rem;
+        margin: 0 0 5rem 3rem;
         font-size: 2.5rem;
         letter-spacing: 0.1rem;
     }
@@ -145,37 +150,53 @@
 
 @include respond(tablet-portrait) { // width <= 834px  
     .card-img {
-        width: 75%;
         margin: 0 3rem 0 -2rem;
     }
 
     .card-desc {
         margin: 0 0 8rem 3rem;
     }
+
+    .img-1 {
+        top: 60%;
+    }
 }
 
 @include respond(mobile-landscape) { // width <= 768px 
+    .card {
+        margin: 0 0 6rem 0;
+    }
+
+    .card-title {
+        font-size: 3.5rem;
+    }
+
+    .img-style {
+        width: 25rem;
+        height: 15rem;
+    }
+
     .img-2 {
         left: 65%;
     }
 
     .card-desc {
         width: 90%;
-        margin: 0 0 8rem 0;
+        margin: 0 0 4rem 0;
+        font-size: 2rem;
     }
 }
 
 @include respond(mobile-portrait-plus) { // width <= 414px  
     .card {
         width: 100%;
-        margin: 0 0 7rem 0;
+        margin: 0 0 10rem 0;
     }
 
     .card-desc {
         width: 100%;
         padding: 0 4rem;
-        font-size: 2rem;
-        margin: 0 0 4rem 0;
+        margin: 0 0 2rem 0;
     }
 
     .card-title {
@@ -189,16 +210,53 @@
 
     .card-img {
         width: 100%;
+        height: 80%;
         margin: 0 0 0 2rem;
         
     }
 
     .img-style {
-        width: 22rem;
-        height: 14rem;
+        width: 18rem;
+        height: 11rem;
     }
 
     .img-1 {
-        top: 60%;
+        top: 55%;
+    }
+}
+
+/* LINE BREAK */
+.line-break {
+    width: 15rem;
+    height: .7rem;
+    border-radius: .8rem;
+    background: rgb(240, 232, 232);
+   position: relative;
+   z-index: 10;
+}
+
+.line-break::before {
+    content: '';
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: rgb(253, 253, 253);
+    position: absolute;
+    top: -100%;
+    left: 43%;
+    z-index: 0;
+}
+
+@include respond(tablet-landscape) { // width <= 1112px
+    .line-break {
+        margin-bottom: 7rem;
+    }
+}
+
+@include respond(mobile-portrait-plus) { // width <= 414px
+    .line-break {
+        visibility: hidden;
+        margin-bottom: 0;
     }
 }

@@ -7,9 +7,9 @@
 
 .project-title {
     color: #FFF;
-    text-shadow: 1px 1px #FF8040, 2px 2px #FF8040, 3px 3px #FF8040;
+    text-shadow: 1px 1px rgb(189, 101, 106), 2px 2px rgb(158, 42, 48), 3px 3px rgb(168, 27, 34);
     font: Bold 5rem;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .project-bar {
@@ -20,7 +20,7 @@
     left: 52%;
     transform: translate(-50%,-50%);
     /* background-image: linear-gradient(to right, #7ac2d8, #367e88); */
-    background-image: linear-gradient(to right, white, #FF8040);
+    background-image: linear-gradient(to right, white, rgb(158, 42, 48));
 }
 
 @include respond(big-desktop) { // width >= 1920px  

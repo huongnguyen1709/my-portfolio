@@ -21,14 +21,8 @@
 }
 
 .header-text {
-    font-family: 'Righteous', cursive;
-    background-image: url(https://media.giphy.com/media/2tMuOCL17ObOPNBdfV/giphy.gif);
-	background-size: cover;
-    color: transparent;
-    text-shadow: white;
-    background-clip: text;
-	-moz-background-clip: text;
-	-webkit-background-clip: text;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
 }
 
 .border{
@@ -76,12 +70,12 @@
 
 .heading-main {
     font-size: 5rem;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
 }
 
 .heading-sub {
     font-size: 3rem;
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.5rem;
     margin-top: 3rem;
 }
 
@@ -130,6 +124,16 @@
         width: 90%;
         left: 45%;
     }
+
+    .heading-main {
+        font-size: 4rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .heading-sub {
+        font-size: 2.5rem;
+        letter-spacing: 0.5rem;
+    }
 }
 
 @include respond(mobile-landscape) { // width <= 768px  
@@ -157,18 +161,19 @@
     }
 
     .header-text {
-        width: 100%;
+        width: 90%;
         text-align: center;
         font-family: 'Roboto', sans-serif;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 
     .heading-main {
-        font-size: 3.5rem;
-        letter-spacing: 0.5rem;
+        font-size: 4rem;
+        letter-spacing: 0.2rem;
     }
 
     .heading-sub {
+        width: 100%;
         font-size: 2.5rem;
         letter-spacing: 0.5rem;
     }

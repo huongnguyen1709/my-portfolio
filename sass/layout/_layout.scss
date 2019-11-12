@@ -35,7 +35,7 @@
 /* SECTION PROJECT */
 .section-project{
     width: 100%;
-    height: 215rem;
+    height: 220rem;
     position: relative;
     background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
@@ -43,18 +43,37 @@
     z-index: 10;
 }
 
-@include respond(tablet-landscape) { // width <= 1112px  
+@include respond(desktop-displays) { // width >= 1680px  
     .section-project {
-        height: 230rem;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        height: 223rem;
     }
 }
 
-@include respond(mobile-landscape) { // width <= 768px  
+@include respond(tablet-landscape) { // width <= 1112px  
     .section-project {
+        height: 285rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    }
+}
+
+@include respond(tablet-portrait-pro) { // width <= 1024px  
+    .section-project {
+        height: 295rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+    }
+}
+
+@include respond(tablet-portrait) { // width <= 834px  
+    .section-project {
+        height: 310rem;
+    }
+}
+
+@include respond(mobile-landscape) { // width <= 768px 
+    .section-project {
+        height: 268rem;
     }
 }
 
@@ -69,7 +88,7 @@
 /* SECTION CONTACT */
 .section-contact {
     width: 100%;
-    height: 78rem;
+    height: 85rem;
     margin-top: -16rem;
     background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
     position: relative;
@@ -79,7 +98,7 @@
 .position-contact {
     width: 100%;
     position: absolute;
-    top: 5rem;
+    top: 8rem;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -88,9 +107,26 @@
 
 @include respond(tablet-landscape) { // width <= 1112px  
     .position-contact {
-        top: 11rem;
+        top: 13rem;
     }
 }
+
+@include respond(tablet-portrait-pro) { // width <= 1024px  
+    .position-contact {
+        top: 14rem;
+    }
+}
+
+@include respond(tablet-portrait) { // width <= 834px  
+    .section-contact {
+        height: 85rem;
+    }
+
+    .position-contact {
+        top: 14rem;
+    }
+}
+
 
 @include respond(mobile-portrait-plus) { // width <= 414px  
     .section-contact {
