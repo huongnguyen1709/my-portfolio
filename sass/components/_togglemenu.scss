@@ -1,8 +1,8 @@
 /* HAMBURGER BUTTON */
 .ham-btn {
     position: fixed;
-    top: 3%;
-    right: 20%;
+    top: 1%;
+    right: 5%;
     width: 6rem;
     height: 5rem;
     padding: .4rem .8rem;
@@ -69,5 +69,16 @@
 @include respond(mobile-portrait-plus) { // width <= 414px  
     .ham-btn {
         visibility: visible;
+    }
+}
+
+@include respond(mobile-portrait) { // width <= 375px  
+    .ham-btn {
+        width: 5rem;
+        height: 4rem;
+    }
+
+    .ham-btn span {
+        height: .3rem;
     }
 }

@@ -99,3 +99,25 @@
         font-size: 6rem;
     }
 }
+
+@include respond(mobile-portrait) { // width <= 375px  
+    .logo {
+        width: 1rem;
+        height: 1rem;
+        margin: 4.5rem;
+    }
+
+    .react-logo {
+        font-size: 5rem;
+        margin-left: -1rem;
+    }
+
+    .wordpress-logo {
+        font-size: 5rem;
+    }
+
+    .htmlcssjs {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+}

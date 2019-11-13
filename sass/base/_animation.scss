@@ -1,27 +1,3 @@
-/* ANIMATION FOR GLOBE */
-  
-@-webkit-keyframes rotate {
-    0% {
-      -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
-              transform: rotateX(0) rotateY(0) rotateZ(0);
-    }
-    100% {
-      -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-              transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-    }
-}
-  
-  @keyframes rotate {
-    0% {
-      -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
-              transform: rotateX(0) rotateY(0) rotateZ(0);
-    }
-    100% {
-      -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-              transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-    }
-}
-
 /* ANIMATION FOR UP ARROW BUTTON */
 
 @keyframes shadow-pulse
@@ -44,4 +20,19 @@
     25%{opacity: 0; transform:translateY(-10px) scale(0.9);}
     26%{opacity: 0; transform:translateY(10px) scale(0.9);}
     55% {opacity: 1; transform: translateY(0px) scale(1);}
+}
+
+/* ANIMATION FOR HEADER */
+
+@keyframes gradientBG {
+	0% {
+		background-position: 50% 0%;
+	}
+	50% {
+		background-position: 50% 100%;
+	}
+	100% {
+		background-position: 50% 0%;
+    }
+    
 }
