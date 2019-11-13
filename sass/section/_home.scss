@@ -178,3 +178,13 @@
         letter-spacing: 0.5rem;
     }
 }
+
+@include respond(mobile-portrait) { // width <= 375px
+    .heading-main {
+        letter-spacing: 0.1rem;
+    }
+
+    .heading-sub {
+        letter-spacing: 0.3rem;
+    }
+}
