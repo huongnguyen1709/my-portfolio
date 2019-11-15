@@ -13,8 +13,6 @@
   }
   
   .logo {
-    width: 8rem;
-    height: 8rem;
     margin: 8rem;
     display: flex;
     flex-direction: column;
@@ -23,10 +21,8 @@
   }
   
   .htmlcssjs {
-      background-image: url("../img/js.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+    width: 8rem;
+    height: 7rem;
   }
   
   .wordpress-logo {
@@ -44,11 +40,6 @@
   }
 
   @include respond(big-desktop) { // width >= 1920px  
-    .logo {
-        width: 8.5rem;
-        height: 8.5rem;
-    }
-
     .wordpress-logo {
         font-size: 7.5rem;
     }
@@ -64,7 +55,7 @@
     }
 }  
 
-@include respond(tablet-portrait) { // width <= 834px  
+@include respond(tablet-portrait-m) { // width <= 918px  
     .logo-container {
         width: 85%;
     }
@@ -74,37 +65,59 @@
     }
 }
 
-@include respond(mobile-portrait-plus) { // width <= 414px  
+@include respond(tablet-portrait-sx) { // width <= 700px  
     .logo-container {
-        width: 100%;
+        width: 90%;
         left: 50%;
     }
 
     .logo {
-        width: 3rem;
-        height: 3rem;
         margin: 5rem;
+    }
+
+    .htmlcssjs {
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+}
+
+@include respond(mobile-landscape-m) { // width <= 516px 
+    .logo-container {
+        width: 100%;
+    }
+
+    .logo {
+        margin: 4rem;
+    }
+
+    .wordpress-logo {
+        font-size: 5rem;
+    }
+
+    .react-logo {
+        font-size: 5rem;
     }
 
     .htmlcssjs {
         width: 6rem;
         height: 6rem;
     }
+}
 
-    .wordpress-logo {
-        font-size: 6rem;
+@include respond(mobile-portrait-m) { // width <= 414px  
+    .logo {
+        margin: 4.5rem;
     }
 
-    .react-logo {
-        font-size: 6rem;
+    .htmlcssjs {
+        width: 5rem;
+        height: 5rem;
     }
 }
 
-@include respond(mobile-portrait) { // width <= 375px  
+@include respond(mobile-portrait-s) { // width <= 375px  
     .logo {
-        width: 1rem;
-        height: 1rem;
-        margin: 4.5rem;
+        margin: 4rem;
     }
 
     .react-logo {
@@ -119,5 +132,24 @@
     .htmlcssjs {
         width: 5.5rem;
         height: 5.5rem;
+    }
+}
+
+@include respond(mobile-portrait-xs) { // width <= 320px
+    .logo {
+        margin: 3rem;
+    }
+
+    .react-logo {
+        font-size: 4.5rem;
+    }
+
+    .wordpress-logo {
+        font-size: 4.5rem;
+    }
+
+    .htmlcssjs {
+        width: 5rem;
+        height: 5rem;
     }
 }

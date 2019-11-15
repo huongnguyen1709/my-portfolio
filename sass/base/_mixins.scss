@@ -25,20 +25,40 @@
 
 
 @mixin respond($breakpoint) {
-    @if $breakpoint == mobile-portrait {
+    @if $breakpoint == mobile-portrait-xs {
+        @media (max-width: 320px) { @content }; // 320 px
+    }
+
+    @if $breakpoint == mobile-portrait-s {
         @media (max-width: 375px) { @content }; // 375 px
     }
 
-    @if $breakpoint == mobile-portrait-plus {
+    @if $breakpoint == mobile-portrait-m {
         @media (max-width: 414px) { @content }; // 414 px
     }
 
-    @if $breakpoint == mobile-landscape {
+    @if $breakpoint == mobile-landscape-m {
+        @media (max-width: 516px) { @content }; // 516 px
+    }
+
+    @if $breakpoint == mobile-landscape-l {
+        @media (max-width: 696px) { @content }; // 696 px
+    }
+
+    @if $breakpoint == tablet-portrait-sx {
+        @media (max-width: 700px) { @content }; // 700 px
+    }
+
+    @if $breakpoint == tablet-portrait-s {
         @media (max-width: 768px) { @content }; // 768 px
     }
 
     @if $breakpoint == tablet-portrait  {
         @media (max-width: 834px) { @content }; // 834 px
+    }
+
+    @if $breakpoint == tablet-portrait-m  {
+        @media (max-width: 918px) { @content }; // 918 px ?????
     }
 
     @if $breakpoint == tablet-portrait-pro  {

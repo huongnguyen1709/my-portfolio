@@ -35,7 +35,7 @@
     }
 }
 
-@include respond(mobile-portrait-plus) { // width <= 414px  
+@include respond(mobile-portrait-m) { // width <= 414px  
     .contact-header {
         height: 12rem;
     }

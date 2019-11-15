@@ -22,7 +22,8 @@
     55% {opacity: 1; transform: translateY(0px) scale(1);}
 }
 
-/* ANIMATION FOR HEADER */
+
+/* ANIMATION FOR HEADER SECTION BACKGROUND */
 
 @keyframes gradientBG {
 	0% {
@@ -34,5 +35,19 @@
 	100% {
 		background-position: 50% 0%;
     }
-    
+}
+
+
+/* ANIMATION FOR BORDER PART BACKGROUND OF HEADER SECTION */
+
+@keyframes Gradient {
+	0% {
+		background-position: 40% 50%
+	}
+	50% {
+		background-position: 25% 50%
+	}
+	100% {
+		background-position: 40% 50%
+	}
 }

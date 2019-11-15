@@ -20,7 +20,7 @@
     text-align: center;
 }
 
-@include respond(mobile-portrait-plus) { // width <= 414px  
+@include respond(mobile-portrait-m) { // width <= 414px  
    .socialmedia {
        width: 90%;
        margin-left: 2rem;

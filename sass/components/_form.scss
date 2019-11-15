@@ -46,14 +46,20 @@
    }
 }
 
-@include respond(mobile-landscape) { // width <= 768px  
+@include respond(tablet-portrait-s) { // width <= 768px  
     .form {
         width: 60%;
    }
 }
 
-@include respond(mobile-portrait-plus) { // width <= 414px  
+@include respond(mobile-landscape-m) { // width <= 516px  
     .form {
         width: 75%;
+   }
+}
+
+@include respond(mobile-portrait-m) { // width <= 414px  
+    .form {
+        width: 85%;
    }
 }

@@ -1,4 +1,5 @@
-/* HAMBURGER BUTTON */
+/* HAMBURGER BUTTON - apply for mobile version 414px */
+
 .ham-btn {
     position: fixed;
     top: 1%;
@@ -66,13 +67,14 @@
     -o-transform: none;
 }
 
-@include respond(mobile-portrait-plus) { // width <= 414px  
+@include respond(mobile-landscape-m) { // width <= 516px  
     .ham-btn {
         visibility: visible;
+        right: 2%;
     }
 }
 
-@include respond(mobile-portrait) { // width <= 375px  
+@include respond(mobile-portrait-s) { // width <= 375px  
     .ham-btn {
         width: 5rem;
         height: 4rem;

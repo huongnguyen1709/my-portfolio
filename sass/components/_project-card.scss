@@ -6,12 +6,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: grey; */
-
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; */
 }
 
 
@@ -20,7 +14,6 @@
 .card {
     width: 90%;
     margin: 5rem 0;
-    /* background-color: orange; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,8 +22,6 @@
 .project-view {
     width: 55%;
     height: 35rem;
-    
-    /* background-color: blue; */
 
     display: flex;
     justify-content: center;
@@ -41,8 +32,6 @@
     width: 100%;
     height: 100%;
     position: relative;
-    /* background-color: rosybrown; */
-  
 }
 
 .img-style {
@@ -84,6 +73,7 @@
     margin-left: 10rem;
     color: black;
     padding: 2rem 0 10rem 0;
+    text-align: center;
    
 }
 
@@ -162,9 +152,9 @@
     }
 }
 
-@include respond(mobile-landscape) { // width <= 768px 
+@include respond(tablet-portrait-s) { // width <= 768px 
     .card {
-        margin: 0 0 6rem 0;
+        margin: 0 0 4rem 0;
     }
 
     .card-title {
@@ -181,15 +171,34 @@
     }
 
     .card-desc {
-        width: 90%;
-        margin: 0 0 4rem 0;
+        width: 80%;
+        margin: 0 0 1rem 0;
         font-size: 2rem;
     }
 }
 
-@include respond(mobile-portrait-plus) { // width <= 414px  
+@include respond(mobile-landscape-m) { // width <= 516px  
     .card {
-        width: 100%;
+        margin: 0;
+    }
+
+    .img-style {
+        width: 18rem;
+        height: 11rem;
+    }
+
+    .img-1 {
+        top: 54%;
+    }
+
+    .img-2 {
+        top: 38%;
+        left: 70%;
+    }
+}
+
+@include respond(mobile-portrait-m) { // width <= 414px  
+    .card {
         margin: 0 0 10rem 0;
     }
 
@@ -215,13 +224,39 @@
         
     }
 
-    .img-style {
-        width: 18rem;
-        height: 11rem;
-    }
-
     .img-1 {
         top: 55%;
+    }
+}
+
+@include respond(mobile-portrait-xs) { // width <= 320px
+    .card {
+        margin-bottom: 4rem;
+    }
+
+    .card-title {
+        font-size: 3rem;
+    }
+
+    .project-view {
+        justify-content: flex-start;
+    }
+
+    .card-desc{
+        font-size: 1.5rem;
+    }
+
+    .img-style {
+        width: 15rem;
+        height: 9rem;
+    }
+
+    .card-img {
+        height: 60%;
+    }
+
+    .img-2 {
+        left: 65%;
     }
 }
 
@@ -254,7 +289,7 @@
     }
 }
 
-@include respond(mobile-portrait-plus) { // width <= 414px
+@include respond(mobile-portrait-m) { // width <= 414px
     .line-break {
         visibility: hidden;
         margin-bottom: 0;

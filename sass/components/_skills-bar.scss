@@ -12,7 +12,6 @@
     width: 100%;
     height: 3.5rem;
     position: relative;
-    /* background-color: #d4f0f5; */
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
     display: flex;
     color: white;
@@ -81,7 +80,7 @@
     }
 }
 
-@include respond(mobile-landscape) { // width <= 768px 
+@include respond(tablet-portrait-s) { // width <= 768px 
     .container {
         width: 75%;
     }
@@ -91,7 +90,18 @@
     }
 }
 
-@include respond(mobile-portrait-plus) { // width <= 414px  
+@include respond(mobile-landscape-m) { // width <= 516px  
+    .bar-name {
+        width: 40%;
+        font-size: 1.6rem;
+    }
+
+    .skills-bar {
+        height: 3rem;
+    }
+}
+
+@include respond(mobile-portrait-m) { // width <= 414px  
     .container {
         width: 80%;
     }
@@ -106,7 +116,7 @@
     }
 }
 
-@include respond(mobile-portrait) { // width <= 375px  
+@include respond(mobile-portrait-s) { // width <= 375px  
     .container {
         width: 85%;
     }
@@ -118,5 +128,15 @@
     .bar-name {
         width: 40%;
         font-size: 1.4rem;
+    }
+}
+
+@include respond(mobile-portrait-xs) { // width <= 320px
+    .container {
+        width: 90%;
+    }
+
+    .bar-name {
+        font-size: 1rem;
     }
 }

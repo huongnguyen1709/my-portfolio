@@ -35,6 +35,15 @@
         margin-top: 3rem;
     }
 }
+
+@include respond(mobile-portrait-m) { // width <= 414px
+    .btn-click {
+        font-size: 2.1rem;
+        width: 14rem;
+        height: 4.5rem; 
+        margin-top: 5rem;
+    }
+}
   
   .btn-click:hover {
     text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
@@ -53,13 +62,13 @@
 
 /* BUTTON VIEW & GITHUB */
 
-@include respond(mobile-landscape) { // width <= 768px  
+@include respond(tablet-portrait-s) { // width <= 768px  
     .btn {
         margin-left: 0;
     }
 }
 
-@include respond(mobile-portrait-plus) { // width <= 414px      
+@include respond(mobile-portrait-m) { // width <= 414px      
     .btn {
         display: flex;
         justify-content: space-around;
@@ -148,7 +157,7 @@
     border-color: #e63b1b;
 }
 
-@include respond(mobile-portrait-plus) { // width <= 414px  
+@include respond(mobile-portrait-m) { // width <= 414px  
     .btn-view {
         margin-bottom: 0;
         margin-right: 2rem;

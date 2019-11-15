@@ -86,7 +86,7 @@
     }
 }
 
-@include respond(mobile-landscape) { // width <= 768px  
+@include respond(tablet-portrait-s) { // width <= 768px  
     .navigation {
         width: 70%;
     }
@@ -96,7 +96,17 @@
     }
 }
 
-@include respond(mobile-portrait-plus) { // width <= 414px  
+@include respond( mobile-landscape-l) { // width <= 696px  
+    .navigation {
+        width: 75%;
+    }
+
+    .nav-link {
+        font-size: 2.5rem;
+    }
+}
+
+@include respond(mobile-landscape-m) { // width <= 516px  
     .navigation {
         visibility: hidden;
     }
