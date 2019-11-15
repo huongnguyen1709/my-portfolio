@@ -95,7 +95,7 @@
 /* SECTION CONTACT */
 .section-contact {
     width: 100%;
-    height: 85rem;
+    height: 115rem;
     margin-top: -16rem;
     background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
     position: relative;
@@ -125,23 +125,20 @@
 }
 
 @include respond(tablet-portrait) { // width <= 834px  
-    .section-contact {
-        height: 85rem;
-    }
-
     .position-contact {
         top: 14rem;
     }
 }
 
-
 @include respond(mobile-portrait-m) { // width <= 414px  
-    .section-contact {
-        height: 85rem;
-    }
-
     .position-contact {
         top: 16rem;
+    }
+}
+
+@include respond(mobile-portrait-xs) { // width <= 320px
+    .section-contact {
+        height: 110rem;
     }
 }
 

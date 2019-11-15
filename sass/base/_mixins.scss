@@ -58,7 +58,7 @@
     }
 
     @if $breakpoint == tablet-portrait-m  {
-        @media (max-width: 918px) { @content }; // 918 px ?????
+        @media (max-width: 918px) { @content }; // 918 px
     }
 
     @if $breakpoint == tablet-portrait-pro  {
