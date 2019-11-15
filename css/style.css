@@ -1140,8 +1140,6 @@ body {
     margin-bottom: 3rem; } }
 
 @media (max-width: 414px) {
-  .header-text-box {
-    top: 50%; }
   .header-text {
     width: 90%;
     text-align: center;
