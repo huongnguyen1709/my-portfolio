@@ -7,14 +7,16 @@
 
 html {
   font-size: 62.5%;
-  /* 10px */ }
+  /* 10px */
+  overflow-x: hidden; }
 
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 /* ANIMATION FOR UP ARROW BUTTON */
 @keyframes shadow-pulse {
@@ -1028,7 +1030,8 @@ body {
 @media (max-width: 375px) {
   .ham-btn {
     width: 5rem;
-    height: 4rem; }
+    height: 4rem;
+    right: 1rem; }
   .ham-btn span {
     height: .3rem; } }
 
