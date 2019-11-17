@@ -336,10 +336,15 @@
     .card-desc {
         width: 95%;
         margin: 0 0 2rem 0;
+        font-size: 1.8rem;
+    }
+
+    .card-desc__outline {
+        font-size: 1.8rem;
     }
 
     .card-title {
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin-bottom: 2rem;
     }
 
@@ -378,66 +383,6 @@
 }
 
 @include respond(mobile-portrait-xs) { // width <= 320px
-    // .card {
-    //     margin-bottom: 4rem;
-    // }
-
-    // .card-title {
-    //     font-size: 3rem;
-    // }
-
-    // .project-view {
-    //     height: 30rem;
-    //     align-items: flex-start;
-    // }
-
-    // .card-desc{
-       
-    //     font-size: 1.5rem;
-    //     position: relative // for align btn to the end
-    // }
-
-    // .card-desc__outline {
-    //     font-size: 1.5rem;
-    // }
-
-    // .img-style {
-    //     width: 15rem;
-    //     height: 9rem;
-    // }
-
-    // .card-img {
-    //     height: 60%;
-    // }
-
-    // .img-1 {
-    //     top: 75%;
-    //     left: 45%;
-    // }
-
-    // .img-2 {
-    //     top: 50%;
-    //     left: 65%;
-    // }
-
-    // .img-3 {
-    //     left: 30%;
-    // }
-
-    // .img-5 {
-    //     top: 75%;
-    //     left: 45%;
-    // }
-
-    // .img-6 {
-    //     top: 50%;
-    //     left: 65%;
-    // }
-
-    // .img-7 {
-    //     left: 30%;
-    // }
-
     .project-view {
         margin-top: 0;
         height: 30rem;

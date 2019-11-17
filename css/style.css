@@ -712,9 +712,12 @@ body {
 @media (max-width: 414px) {
   .card-desc {
     width: 95%;
-    margin: 0 0 2rem 0; }
+    margin: 0 0 2rem 0;
+    font-size: 1.8rem; }
+  .card-desc__outline {
+    font-size: 1.8rem; }
   .card-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 2rem; }
   .card-img {
     width: 100%; }
@@ -1504,7 +1507,7 @@ body {
 
 @media (max-width: 414px) {
   .skills-heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 0.6rem; } }
 
 .project-header {
@@ -1542,7 +1545,7 @@ body {
   .project-header {
     height: 15rem; }
   .project-title {
-    font-size: 3.5rem; }
+    font-size: 3.4rem; }
   .project-bar {
     width: 11rem;
     top: 71%;
