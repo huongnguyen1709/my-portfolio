@@ -864,7 +864,7 @@ body {
   height: 10rem;
   position: absolute;
   top: 85%;
-  left: 53%;
+  left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
   display: flex;
@@ -872,11 +872,7 @@ body {
   align-items: center; }
 
 .logo {
-  margin: 8rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  margin: 8rem; }
 
 .htmlcssjs {
   width: 8rem;
