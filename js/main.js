@@ -24,6 +24,11 @@ $(document).ready(function() {
         $('.ham-btn').toggleClass('active');
         $('.toggle-menu').toggleClass('active');
     });
+
+    $('.nav-link').click(function() {
+        $('.ham-btn').removeClass('active');
+        $('.toggle-menu').removeClass('active');
+    });
 })
 
 

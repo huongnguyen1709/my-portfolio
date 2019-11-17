@@ -12,15 +12,15 @@
 /* EVERY PROJECT CARD */
 
 .card {
-    width: 90%;
-    margin: 5rem 0;
+    width: 75%;
+    margin: 8rem 0 8rem 5.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .project-view {
-    width: 55%;
+    width: 50%;
     height: 35rem;
 
     display: flex;
@@ -35,32 +35,53 @@
 }
 
 .img-style {
-    width: 25rem;
-    height: 15rem;
-    background-size: cover;
-    background-position: center;
+    width: 30rem;
+    height: 18rem;
     position: absolute;
+    transform: translate(-50%,-50%);
     border: 0.2rem solid rgb(88, 6, 10);
 }
 
+.img-style:hover {
+    // outline: 1.5rem solid black;
+    transform: scale(1.1) translate(-50%, -50%);
+    box-shadow: 0 2.5rem 4rem rgba(black, .5);
+    z-index: 60; //20 > 10, nên lúc nào cũng sẽ nằm trên
+}
+
 .img-1 {
-    top: 60%;
-    left: 40%;
-    transform: translate(-50%,-50%);
+    top: 62%;
+    left: 38%;
     z-index: 50;
 }
 
 .img-2 {
-    top: 40%;
+    top: 43%;
     left: 65%;
-    transform: translate(-50%,-50%);
     z-index: 30;
 }
 
 .img-3 {
     top: 30%;
+    left: 25%;
+    z-index: 10;
+}
+
+.img-5 {
+    top: 65%;
+    left: 50%;
+    z-index: 50;
+}
+
+.img-6 {
+    top: 43%;
+    left: 75%;
+    z-index: 30;
+}
+
+.img-7 {
+    top: 30%;
     left: 30%;
-    transform: translate(-50%,-50%);
     z-index: 10;
 }
 
@@ -68,31 +89,94 @@
 /* PROJECT DESCRIPTION */
 
 .card-desc {
-    width: 35%;
+    width: 50%;
     font-size: 2rem;
-    margin-left: 10rem;
     color: black;
-    padding: 2rem 0 10rem 0;
-    text-align: center;
    
 }
 
 .card-title {
     font-size: 3.5rem;
-    text-align: center;
     margin-bottom: 3rem;
     color: rgb(158, 42, 48);
 }
 
+.card-desc__outline {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(158, 42, 48);
+}
+
 @include respond(desktop-displays) { // width >= 1680px  
+    .card {
+        width: 85%;
+    }
     .card-desc {
         font-size: 2.2rem;
+    }
+
+    .img-style {
+        width: 40rem;
+        height: 25rem;
+    }
+
+    .img-6 {
+        left: 80%;
+    }
+}
+
+@include respond(big-desktop) { // width >= 1920px  
+    .card-title {
+        font-size: 4.5rem;
+    }
+
+    .card-desc {
+        font-size: 2.5rem;
+    }
+
+    .card-desc__outline {
+        font-size: 2.5rem;
+    }
+
+    .img-style {
+        width: 35rem;
+        height: 20rem;
+    }
+
+    .img-1 {
+        top: 65%;
     }
 }
 
 @include respond(laptop-displays) { // width <= 1440px  
     .card-img {
         width: 80%;
+    }
+
+    .img-1 {
+        top: 65%;
+    }
+
+    .img-2 {
+        left: 70%;
+    }
+
+    .img-3 {
+        left: 20%;
+    }
+
+    .img-6 {
+        left: 85%;
+    }
+
+    .img-7 {
+        left: 25%;
+    }
+}
+
+@include respond(tablet-landscape-pro) { // width <= 1366px  
+    .img-7 {
+        left: 20%;
     }
 }
 
@@ -101,7 +185,7 @@
         width: 100%;
         flex-direction: column;
         justify-content: center;
-        margin: 0 0 3rem 0;
+        margin: 0 0 6rem 0;
     }
 
     .project-view {
@@ -111,16 +195,28 @@
 
     .card-img {
         width: 60%;
-        margin: 0 0 0 -5rem;
+        
     }
 
     .img-1 {
-        top: 60%;
+        top: 65%;
+        left: 50%;
     }
 
     .img-2 {
-        top: 40%;
-        left: 60%;
+        left: 70%;
+    }
+
+    .img-3 {
+        left: 35%;
+    }
+
+    .img-6 {
+        left: 70%;
+    }
+
+    .img-7 {
+        left: 35%;
     }
 
     .card-desc {
@@ -129,6 +225,11 @@
         margin: 0 0 5rem 3rem;
         font-size: 2.5rem;
         letter-spacing: 0.1rem;
+        text-align: center;
+    }
+
+    .card-desc__outline {
+        font-size: 2.5rem;
     }
 }
 
@@ -136,25 +237,42 @@
     .img-1 {
         top: 65%;
     }
+
+    .img-5 {
+        top: 65%;
+    }
 }
 
 @include respond(tablet-portrait) { // width <= 834px  
     .card-img {
-        margin: 0 3rem 0 -2rem;
-    }
-
-    .card-desc {
-        margin: 0 0 8rem 3rem;
+        width: 65%;
     }
 
     .img-1 {
         top: 60%;
     }
+
+    .img-2 {
+        left: 75%;
+    }
+
+    .img-5 {
+        top: 60%;
+    }
+
+    .img-6 {
+        left: 75%;
+    }
 }
+
 
 @include respond(tablet-portrait-s) { // width <= 768px 
     .card {
-        margin: 0 0 4rem 0;
+        margin: 0 0 3rem 0;
+    }
+
+    .project-view {
+        margin-top: 2rem;
     }
 
     .card-title {
@@ -166,14 +284,20 @@
         height: 15rem;
     }
 
-    .img-2 {
-        left: 65%;
-    }
-
     .card-desc {
         width: 80%;
         margin: 0 0 1rem 0;
         font-size: 2rem;
+    }
+
+    .card-desc__outline {
+        font-size: 2rem;
+    }
+}
+
+@include respond(tablet-portrait-sx) { // width <= 700px  
+    .card-img {
+        width: 70%;
     }
 }
 
@@ -189,22 +313,28 @@
 
     .img-1 {
         top: 54%;
+        left: 43%;
     }
 
     .img-2 {
         top: 38%;
-        left: 70%;
+        left: 65%;
+    }
+
+    .img-5 {
+        top: 54%;
+        left: 43%;
+    }
+
+    .img-6 {
+        top: 38%;
+        left: 65%;
     }
 }
 
 @include respond(mobile-portrait-m) { // width <= 414px  
-    .card {
-        margin: 0 0 10rem 0;
-    }
-
     .card-desc {
-        width: 100%;
-        padding: 0 4rem;
+        width: 95%;
         margin: 0 0 2rem 0;
     }
 
@@ -213,85 +343,140 @@
         margin-bottom: 2rem;
     }
 
-    .project-view {
-        flex-direction: column;
-    }
-
     .card-img {
         width: 100%;
-        height: 80%;
-        margin: 0 0 0 2rem;
         
     }
 
     .img-1 {
         top: 55%;
+        left: 45%;
+    }
+
+    .img-2 {
+        top: 40%;
+    }
+
+    .img-3 {
+        top: 32%;
+        left: 33%;
+    }
+
+    .img-5 {
+        top: 55%;
+        left: 45%;
+    }
+
+    .img-6 {
+        top: 40%;
+    }
+
+    .img-7 {
+        top: 32%;
+        left: 33%;
     }
 }
 
 @include respond(mobile-portrait-xs) { // width <= 320px
-    .card {
-        margin-bottom: 4rem;
-    }
+    // .card {
+    //     margin-bottom: 4rem;
+    // }
 
-    .card-title {
-        font-size: 3rem;
-    }
+    // .card-title {
+    //     font-size: 3rem;
+    // }
+
+    // .project-view {
+    //     height: 30rem;
+    //     align-items: flex-start;
+    // }
+
+    // .card-desc{
+       
+    //     font-size: 1.5rem;
+    //     position: relative // for align btn to the end
+    // }
+
+    // .card-desc__outline {
+    //     font-size: 1.5rem;
+    // }
+
+    // .img-style {
+    //     width: 15rem;
+    //     height: 9rem;
+    // }
+
+    // .card-img {
+    //     height: 60%;
+    // }
+
+    // .img-1 {
+    //     top: 75%;
+    //     left: 45%;
+    // }
+
+    // .img-2 {
+    //     top: 50%;
+    //     left: 65%;
+    // }
+
+    // .img-3 {
+    //     left: 30%;
+    // }
+
+    // .img-5 {
+    //     top: 75%;
+    //     left: 45%;
+    // }
+
+    // .img-6 {
+    //     top: 50%;
+    //     left: 65%;
+    // }
+
+    // .img-7 {
+    //     left: 30%;
+    // }
 
     .project-view {
-        justify-content: flex-start;
-    }
-
-    .card-desc{
-        font-size: 1.5rem;
-    }
-
-    .img-style {
-        width: 15rem;
-        height: 9rem;
-    }
-
-    .card-img {
-        height: 60%;
+        margin-top: 0;
+        height: 30rem;
     }
 
     .img-2 {
-        left: 65%;
+        left: 68%;
+    }
+
+    .img-6 {
+        left: 68%;
     }
 }
 
 /* LINE BREAK */
 .line-break {
     width: 15rem;
-    height: .6rem;
+    height: .3rem;
     border-radius: .8rem;
     background: rgb(240, 232, 232);
    position: relative;
    z-index: 10;
 }
 
-.line-break::before {
-    content: '';
-    width: 2rem;
-    height: 2rem;
-    border: 1px solid white;
-    border-radius: 50%;
-    background: rgb(253, 253, 253);
-    position: absolute;
-    top: -130%;
-    left: 43%;
-    z-index: 0;
-}
+// .line-break::before {
+//     content: '';
+//     width: 2rem;
+//     height: 2rem;
+//     border: 1px solid white;
+//     border-radius: 50%;
+//     background: rgb(253, 253, 253);
+//     position: absolute;
+//     top: -130%;
+//     left: 43%;
+//     z-index: 0;
+// }
 
 @include respond(tablet-landscape) { // width <= 1112px
     .line-break {
         margin-bottom: 7rem;
-    }
-}
-
-@include respond(mobile-portrait-m) { // width <= 414px
-    .line-break {
-        visibility: hidden;
-        margin-bottom: 0;
     }
 }

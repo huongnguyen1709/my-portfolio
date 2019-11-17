@@ -61,6 +61,7 @@
 }
 
 .toggle-menu.active {
+    position: fixed;
     opacity: 1;
     transform: none;
     -webkit-transform: none;

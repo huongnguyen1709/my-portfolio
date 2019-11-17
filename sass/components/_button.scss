@@ -61,41 +61,20 @@
 
 
 /* BUTTON VIEW & GITHUB */
+.btn {
+    display: flex;
+    margin-top: 3rem;
+}
+
+@include respond(tablet-landscape) { // width <= 1112px 
+    .btn {
+        justify-content: center;
+    }
+}
 
 @include respond(tablet-portrait-s) { // width <= 768px  
     .btn {
         margin-left: 0;
-    }
-}
-
-@include respond(mobile-portrait-m) { // width <= 414px      
-    .btn {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: relative;
-    }
-
-    .btn::before, .btn::after {
-    content: '';
-    position: absolute;
-    bottom: -7rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255,255,255,0.75);
-    }
-
-    .btn::before {
-        width: 12rem;
-        height: .3rem;
-        border-radius: .8rem;
-    }
-
-    .btn::after {
-        width: 1.5rem;
-        height: 1.5rem;
-        border-radius: 100%;
-        bottom: -7.6rem;
     }
 }
 
@@ -105,7 +84,7 @@
 .btn-view {
     width: 10rem;
     height: 4rem;
-    margin-bottom: 2rem; 
+    margin: 0 3rem 2rem 0; 
     border: 2px solid;
     border-radius: .7rem;
     cursor: pointer;
@@ -157,6 +136,30 @@
     border-color: #e63b1b;
 }
 
+@include respond(desktop-displays) { // width >= 1680px 
+    .btn-view {
+        width: 11rem;
+        height: 5rem;
+        font-size: 1.8rem;
+    }
+}
+
+@include respond(big-desktop) { // width >= 1920px  
+    .btn-view {
+        width: 13rem;
+        height: 5.5rem;
+        font-size: 2rem;
+    }
+}
+
+@include respond(laptop-displays) { // width <= 1440px  
+    .btn-view {
+        width: 10.5rem;
+        height: 5rem;
+        font-size: 1.7rem;
+    }
+}
+
 @include respond(mobile-portrait-m) { // width <= 414px  
     .btn-view {
         margin-bottom: 0;
@@ -194,6 +197,30 @@
     transform: translateY(2px);
 }
 
+@include respond(desktop-displays) { // width >= 1680px 
+    .btn-link {
+        width: 11rem;
+        height: 5rem;
+        font-size: 1.8rem;
+    }
+}
+
+@include respond(big-desktop) { // width >= 1920px  
+    .btn-link {
+        width: 13rem;
+        height: 5.5rem;
+        font-size: 2rem;
+    }
+}
+
+@include respond(laptop-displays) { // width <= 1440px  
+    .btn-link {
+        width: 10.5rem;
+        height: 5rem;
+        font-size: 1.7rem;
+    }
+}
+
 
 /* BUTTON SEND */
 
@@ -204,7 +231,7 @@
   border-radius: 4px;
   background: linear-gradient(to right, rgb(127, 192, 184), rgb(27, 180, 162));
   border: none;
-  box-shadow: 0px 5px 40px -5px rgba(0,0,0,0.57);
+  box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.57);
   color: #FFFFFF;
   transition: all 0.4s;
   cursor: pointer;
@@ -213,13 +240,9 @@
   float: right;
 }
 
-.btn-send:hover {
-  box-shadow: 4px 8px #3a7999;
-}
-
 .btn-send:active {
   transform: translateY(3px);
-  box-shadow: 5px 9px #3a7999;
+  box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.57);
 }
 
 @include respond(tablet-landscape) { // width <= 1112px  

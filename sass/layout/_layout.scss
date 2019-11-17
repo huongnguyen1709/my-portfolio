@@ -22,7 +22,7 @@
 /* SECTION PROJECT */
 .section-project{
     width: 100%;
-    height: 220rem;
+    height: 245rem;
     position: relative;
     background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
@@ -32,13 +32,25 @@
 
 @include respond(desktop-displays) { // width >= 1680px  
     .section-project {
-        height: 223rem;
+        height: 255rem;
+    }
+}
+
+@include respond(big-desktop) { // width >= 1920px  
+    .section-project {
+        height: 260rem;
+    }
+}
+
+@include respond(laptop-displays) { // width <= 1440px  
+    .section-project {
+        height: 250rem;
     }
 }
 
 @include respond(tablet-landscape) { // width <= 1112px  
     .section-project {
-        height: 285rem;
+        height: 390rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
     }
@@ -46,7 +58,6 @@
 
 @include respond(tablet-portrait-pro) { // width <= 1024px  
     .section-project {
-        height: 295rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
     }
@@ -54,33 +65,40 @@
 
 @include respond(tablet-portrait) { // width <= 834px  
     .section-project {
-        height: 310rem;
+        height: 395rem;
     }
 }
 
 @include respond(tablet-portrait-s) { // width <= 768px 
     .section-project {
-        height: 278rem;
-    }
-}
-
-@include respond(mobile-landscape-m) { // width <= 516px  
-    .section-project {
-        height: 270rem;
+        height: 360rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
     }
 }
 
+@include respond(mobile-landscape-ml) { // width <= 600px 
+    .section-project {
+        height: 370rem;
+    }
+}
+
+@include respond(mobile-landscape-m) { // width <= 516px  
+    .section-project {
+        height: 365rem;
+       
+    }
+}
+
 @include respond(mobile-portrait-m) { // width <= 414px  
     .section-project {
-        height: 285rem;
+        height: 353rem;
     }
 }
 
 @include respond(mobile-portrait-s) { // width <= 375px  
     .section-project {
-        height: 290rem;
+        height: 350rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 99%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 99%, 0 100%);
     }
@@ -88,15 +106,15 @@
 
 @include respond(mobile-portrait-xs) { // width <= 320px
     .section-project {
-        height: 250rem;
+        height: 340rem;
     }
 }
 
 /* SECTION CONTACT */
 .section-contact {
     width: 100%;
-    height: 118rem;
-    margin-top: -16rem;
+    height: 121rem;
+    margin-top: -18rem;
     background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
     position: relative;
     z-index: 2;
@@ -105,7 +123,7 @@
 .position-contact {
     width: 100%;
     position: absolute;
-    top: 8rem;
+    top: 11rem;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -130,15 +148,22 @@
     }
 }
 
+@include respond(tablet-portrait-s) { // width <= 768px 
+    .position-contact {
+        top: 18rem;
+    }
+}
+
+
 @include respond(mobile-portrait-m) { // width <= 414px  
     .position-contact {
-        top: 16rem;
+        top: 20rem;
     }
 }
 
 @include respond(mobile-portrait-xs) { // width <= 320px
     .section-contact {
-        height: 110rem;
+        height: 120rem;
     }
 }
 

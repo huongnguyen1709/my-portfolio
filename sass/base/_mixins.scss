@@ -41,6 +41,10 @@
         @media (max-width: 516px) { @content }; // 516 px
     }
 
+    @if $breakpoint == mobile-landscape-ml {
+        @media (max-width: 600px) { @content }; // 600 px
+    }
+
     @if $breakpoint == mobile-landscape-l {
         @media (max-width: 696px) { @content }; // 696 px
     }
