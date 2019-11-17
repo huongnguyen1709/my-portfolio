@@ -92,13 +92,13 @@
 
 @include respond(mobile-portrait-m) { // width <= 414px  
     .section-project {
-        height: 353rem;
+        height: 335rem;
     }
 }
 
 @include respond(mobile-portrait-s) { // width <= 375px  
     .section-project {
-        height: 350rem;
+        height: 338rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 99%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 99%, 0 100%);
     }
@@ -106,7 +106,7 @@
 
 @include respond(mobile-portrait-xs) { // width <= 320px
     .section-project {
-        height: 340rem;
+        height: 320rem;
     }
 }
 

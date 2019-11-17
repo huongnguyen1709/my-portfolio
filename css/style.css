@@ -1101,17 +1101,17 @@ body {
 
 @media (max-width: 414px) {
   .section-project {
-    height: 353rem; } }
+    height: 335rem; } }
 
 @media (max-width: 375px) {
   .section-project {
-    height: 350rem;
+    height: 338rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 99%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 99%, 0 100%); } }
 
 @media (max-width: 320px) {
   .section-project {
-    height: 340rem; } }
+    height: 320rem; } }
 
 /* SECTION CONTACT */
 .section-contact {
@@ -1290,7 +1290,8 @@ body {
     letter-spacing: 0.2rem; }
   .heading-sub {
     width: 100%;
-    font-size: 2rem; } }
+    font-size: 2rem;
+    letter-spacing: 0.2rem; } }
 
 @media (max-width: 375px) {
   .heading-main {
