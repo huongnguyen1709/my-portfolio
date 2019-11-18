@@ -12,11 +12,23 @@
 /* EVERY PROJECT CARD */
 
 .card {
-    width: 75%;
-    margin: 8rem 0 8rem 5.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    opacity: 0;
+}
+
+.card-left {
+    width: 75%;
+    margin: 8rem 0 8rem -30rem;
+    opacity: 0;
+}
+
+.card-right {
+    width: 75%;
+    margin: 8rem -30rem 8rem 5.5rem;
+    opacity: 0;
 }
 
 .project-view {
@@ -43,10 +55,11 @@
 }
 
 .img-style:hover {
-    // outline: 1.5rem solid black;
+    outline: 1rem solid rgb(88, 6, 10);
+    padding: 0.5rem;
     transform: scale(1.1) translate(-50%, -50%);
     box-shadow: 0 2.5rem 4rem rgba(black, .5);
-    z-index: 60; //20 > 10, nên lúc nào cũng sẽ nằm trên
+    z-index: 60; 
 }
 
 .img-1 {
