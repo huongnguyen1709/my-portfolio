@@ -185,9 +185,3 @@
         height: 14rem;
     }
 }
-
-@include respond(mobile-portrait-s) { // width <= 375px  
-    .footer {
-       
-    }
-}
