@@ -33,8 +33,8 @@ $(document).ready(function() {
     $(window).scroll( function(){
         $('.about-desc').each( function(i){
 
-            var top_of_element = $(this).offset().top;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            const top_of_element = $(this).offset().top;
+            const bottom_of_window = $(window).scrollTop() + $(window).height();
 
             if( bottom_of_window > top_of_element ){
                 $(this).animate({'opacity':'1','margin-left':'10%'},1500);
@@ -43,8 +43,8 @@ $(document).ready(function() {
         });
 
         $('.skills-heading').each( function(i){
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            const bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            const bottom_of_window = $(window).scrollTop() + $(window).height();
 
             if( bottom_of_window > bottom_of_element ){
                 $(this).animate({'opacity':'1','margin-right':'0rem'},1500);
@@ -54,8 +54,8 @@ $(document).ready(function() {
 
         $('.container').each( function(i){
 
-            var top_of_element = $(this).offset().top;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            const top_of_element = $(this).offset().top;
+            const bottom_of_window = $(window).scrollTop() + $(window).height();
 
             if( bottom_of_window > top_of_element ){
                 $(this).animate({'opacity':'1','margin-left':'0rem'},1700);
@@ -64,8 +64,8 @@ $(document).ready(function() {
         });
 
         $('.card-left').each( function(i){
-            var top_of_element = $(this).offset().top;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            const top_of_element = $(this).offset().top;
+            const bottom_of_window = $(window).scrollTop() + $(window).height();
 
             if( bottom_of_window > top_of_element ){
                 $(this).animate({'opacity':'1','margin':'8rem 0 8rem 5.5rem'},1500);
@@ -74,8 +74,8 @@ $(document).ready(function() {
         });
 
         $('.card-right').each( function(i){
-            var top_of_element = $(this).offset().top;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            const top_of_element = $(this).offset().top;
+            const bottom_of_window = $(window).scrollTop() + $(window).height();
 
             if( bottom_of_window > top_of_element ){
                 $(this).animate({'opacity':'1','margin':'8rem 0 8rem 5.5rem'},1500);
@@ -85,8 +85,8 @@ $(document).ready(function() {
 
         $('.contact-text, .form, .contact-info').each( function(i){
 
-            var top_of_element = $(this).offset().top;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            const top_of_element = $(this).offset().top;
+            const bottom_of_window = $(window).scrollTop() + $(window).height();
 
             if( bottom_of_window > top_of_element ){
                 $(this).animate({'opacity':'1'},1500);
