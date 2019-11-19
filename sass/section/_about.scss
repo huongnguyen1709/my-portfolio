@@ -6,13 +6,12 @@
     margin-bottom: 3rem;
     text-align: center;
     position: relative; 
-    // opacity: 0;
 }
 
 .about-title {
     font-size: 4.5rem;
     color: #FFF;
-    text-shadow: 1px 1px #FF8040, 2px 2px #FF8040, 3px 3px #FF8040;
+    text-shadow: 1px 1px rgb(114, 108, 108), 2px 2px rgb(92, 89, 89), 3px 3px black;
     font: Bold 5rem;
 }
 
@@ -23,7 +22,7 @@
     top: 72%;
     left: 52%;
     transform: translate(-50%,-50%);
-    background-image: linear-gradient(to right, white, #FF8040);
+    background-image: linear-gradient(to right, white, rgb(114, 108, 108));
 }
 
 @include respond(big-desktop) { // width >= 1920px  
@@ -69,31 +68,23 @@
 /* DESCRIPTION */
 
 .about-desc { 
-
-    opacity:0;
-    margin-left:-30rem; 
-
-    max-width: calc(100% - 14%);
+    max-width: calc(100% - 20%);
     padding: 3rem 0 3rem 0;
-    // margin-left: 7%;
-    border-radius: 20rem 20rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
-    transform: skewY(-5deg); 
-    box-shadow: 0 0 60px #7ac2d8, inset 0 0 60px #367e88;
-    overflow: hidden;
+
+    opacity:0;  // for animation page scrolling
+    margin-left:-30rem; 
 }
 
 .profile-picture {
-    width: 33rem;
-    height: 33rem;
+    width: 35rem;
+    height: 35rem;
     border-radius: 50%;
+    box-shadow: 0 0 60px #7ac2d8, inset 0 0 60px #367e88;
     background-image: url("../img/Profile_picture.jpg");
     background-position: 30% 45%;
-    transform: skewY(5deg);
-    margin-right: 2rem;
 }
 
 .about-text {
@@ -102,11 +93,8 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    line-height: 5rem;
-    color: #27302f;
-    transform: skewY(5deg);
-    margin-top: 3rem;
-    margin-left: 5rem;
+    line-height: 4rem;
+    color: black;
 }
 
 @include respond(big-desktop) { // width >= 1920px  
@@ -136,12 +124,6 @@
 }
 
 @include respond(tablet-landscape-pro) { // width <= 1366px  
-    .profile-picture {
-        width: 32rem;
-        height: 32rem;
-        background-position: 30% 40%;
-    }
-
     .about-desc {
         width: calc(100% - 10%);
         margin-left: 5%;
@@ -160,10 +142,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: none;
-        box-shadow: none;
-        transform: skewY(0deg);
-        border-radius: 0px !important;
     }
 
     .profile-picture {
@@ -175,8 +153,8 @@
     }
 
     .about-text {
-        width: 60%;
-        margin-left: 2rem;
+        width: calc(100% - 8rem);
+        margin-left: 4rem;
         font-size: 2.5rem;
         line-height: 6rem;  
         transform: skewY(0deg);
@@ -185,21 +163,38 @@
 
 @include respond(tablet-portrait) { // width <= 834px  
     .about-text {
-        width: 70%;
+        width: calc(100% - 6rem);
+        margin-left: 3rem;
     }
 }
 
 @include respond(tablet-portrait-s) { // width <= 768px  
     .about-text {
-        width: 80%;
+        width: calc(100% - 4rem);
+        margin-left: 2rem;
+    }
+}
+
+@include respond(mobile-landscape-ml) { // width <= 600px  
+    .about-text {
+        width: 100%;
+        margin-left: 0;
+        line-height: 5rem;
+        font-size: 2.2rem;
+    }
+
+    .profile-picture {
+        width: 35rem;
+        height: 35rem;
+        background-position: 25% 45%;
     }
 }
 
 @include respond(mobile-landscape-m) { // width <= 516px  
     .profile-picture {
-        width: 35rem;
-        height: 35rem;
-        background-position: 25% 45%;
+        width: 30rem;
+        height: 30rem;
+        background-position: 30% 40%;
     }
 
     .about-text {
@@ -241,7 +236,7 @@
 
 .skills {
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 8rem;
     padding: 2rem 0 2rem 0;
     display: flex;
     flex-direction: column;
@@ -253,6 +248,7 @@
     height: 5rem;
     color: black;
     text-shadow: 1px 1px rgb(240, 229, 229), 2px 2px white, 3px 3px white;
+   
     text-align: center;
     font-size: 3rem;
     text-transform: uppercase;
