@@ -15,9 +15,16 @@
 }
 
 .copyright {
-    margin-top: -0.5rem;
     font-size: 2rem;
     text-align: center;
+}
+
+.myCV {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    opacity: 0.5;
+    margin: 1rem 0;
 }
 
 @include respond(mobile-portrait-m) { // width <= 414px  
@@ -26,3 +33,9 @@
        margin-left: 2rem;
    }
 }
+
+@include respond(mobile-portrait-xs) { // width <= 320px  
+    .icon {
+        font-size: 4rem;
+    }
+ }
