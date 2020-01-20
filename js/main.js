@@ -89,7 +89,7 @@ $(document).ready(function() {
             const bottom_of_window = $(window).scrollTop() + $(window).height();
 
             if( bottom_of_window > top_of_element ){
-                $(this).animate({'opacity':'1'},1500);
+                $(this).animate({'opacity':'1'},3000);
             }
 
         });
@@ -97,17 +97,3 @@ $(document).ready(function() {
     });
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
