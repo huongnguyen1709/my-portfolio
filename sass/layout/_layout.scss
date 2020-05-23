@@ -22,7 +22,7 @@
 /* SECTION PROJECT */
 .section-project{
     width: 100%;
-    height: 245rem;
+    height: 250rem;
     position: relative;
     background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
@@ -44,13 +44,13 @@
 
 @include respond(laptop-displays) { // width <= 1440px  
     .section-project {
-        height: 250rem;
+        height: 255rem;
     }
 }
 
 @include respond(tablet-landscape) { // width <= 1112px  
     .section-project {
-        height: 390rem;
+        height: 400rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
     }
@@ -60,12 +60,6 @@
     .section-project {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
-    }
-}
-
-@include respond(tablet-portrait) { // width <= 834px  
-    .section-project {
-        height: 395rem;
     }
 }
 
@@ -79,26 +73,26 @@
 
 @include respond(mobile-landscape-ml) { // width <= 600px 
     .section-project {
-        height: 370rem;
+        height: 375rem;
     }
 }
 
 @include respond(mobile-landscape-m) { // width <= 516px  
     .section-project {
-        height: 365rem;
+        height: 370rem;
        
     }
 }
 
 @include respond(mobile-portrait-m) { // width <= 414px  
     .section-project {
-        height: 335rem;
+        height: 340rem;
     }
 }
 
 @include respond(mobile-portrait-s) { // width <= 375px  
     .section-project {
-        height: 338rem;
+        height: 350rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 99%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 99%, 0 100%);
     }
@@ -164,6 +158,10 @@
 @include respond(mobile-portrait-xs) { // width <= 320px
     .section-contact {
         height: 120rem;
+    }
+
+    .section-project {
+        height: 335rem;
     }
 }
 
